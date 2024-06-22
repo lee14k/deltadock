@@ -1,6 +1,7 @@
 import ArchShape from "./ArchShape";
 import Image from "next/image";
 import Link from "next/link";
+
 export default function HomeHeader() {
   return (
     <div className="grid grid-cols-2">
