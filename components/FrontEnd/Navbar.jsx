@@ -5,19 +5,21 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import NavMobile from "./NavMobile";
 import { useMediaQuery } from "react-responsive";
-
 const navigation = [
   { name: "Home", href: "/", current: true },
   {
-    name: "Book",
-    href: "/book",
+    name: "Services",
+    href: "/services",
+    submenu: [
+      { name: "Overhead Garage Doors", href: "/overhead-garage-doors" },
+      { name: "Commercial Doors", href: "/commercial-doors" },
+      { name: "Openers", href: "/openers" },
+    ],
   },
-  {
-    name: "Chef's Table",
-    href: "/chefs-table",
-  },
-  { name: "Contact", href: "/contact", current: false },
+  { name: "Our Team", href: "/our-team" },
+  { name: "Contact", href: "/contact" },
 ];
+
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -76,6 +78,19 @@ export default function Navbar() {
                             <Link href={item.href}>
                               <span className="text-4xl">{item.name}</span>
                             </Link>
+                          )}
+                             {item.children && activeDropdown === item.name && (
+                            <div className="absolute z-10 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
+                              <div className="py-1">
+                                {item.children.map((subItem) => (
+                                  <Link key={subItem.name} href={subItem.href}>
+                                    <span className="block px-4 py-2 text-sm hover:bg-gray-100 text-xl">
+                                      {subItem.name}
+                                    </span>
+                                  </Link>
+                                ))}
+                              </div>
+                            </div>
                           )}
                         </div>
                       ))}
