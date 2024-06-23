@@ -9,7 +9,7 @@ const navigation = [
   { name: "Home", href: "/", current: true },
   {
     name: "Services",
-    href: "/services",
+    href: "/",
     submenu: [
       { name: "Overhead Garage Doors", href: "/overhead-garage-doors" },
       { name: "Commercial Doors", href: "/commercial-doors" },
