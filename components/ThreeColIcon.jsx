@@ -9,7 +9,7 @@ export default function ThreeColIcon() {
     <div className="bg-blue-800">
         <h1>We have you covered!</h1>
         <p>Copy</p>
-        <div className="grid grid-cols-3 ">
+        <div className="grid lg:grid-cols-3 ">
       {groups.map((icon, index) => (
         <div key={index}>
           <div className=""></div>
