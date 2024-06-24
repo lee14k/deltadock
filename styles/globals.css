@@ -1,29 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 .sq {
-  border: 2px solid #eb6200;
-  border-top:0px;
-  height: 400px;
-  width: 500px;
+  border: 1.5px solid #eb6200;  /* Adjusted border size */
+  border-top: 0px;
+  height: 300px;  /* Adjusted height */
+  width: 398px;  /* Adjusted width */
   position: relative;
-  margin-top: 100px;
+  margin-top: 75px;  /* Adjusted margin */
 }
+
 .tl {
   position: absolute;
-  top: -106px;
-  left: -110px;
-  border-left: 2px solid #eb6200;
-  border-top: 2px solid #eb6200;
-  height:355px;
-  width: 355px;
+  top: -85.5px;  /* Adjusted top */
+  left: -86.5px;  /* Adjusted left to center the roof */
+  border-left: 1.5px solid #eb6200;  /* Adjusted border size */
+  border-top: 1.5px solid #eb6200;
+  height: 282.25px;  /* Adjusted height */
+  width: 282.25px;  /* Adjusted width */
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   transform-origin: 100% 100%;
 }
+
+
 
 .customcontact {
   background-image: url('/ddcontactb.jpg');
@@ -36,4 +38,9 @@
 .ourservices {
   background: rgb(255,250,241);
 background: linear-gradient(180deg, rgba(255,250,241,1) 0%, rgba(12,25,91,1) 100%);
+}
+
+.three-icon-home {
+  background: rgba(12,25,91,1)
+
 }

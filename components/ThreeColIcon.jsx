@@ -6,7 +6,7 @@ export default function ThreeColIcon() {
   ]; 
 
   return (
-    <div className="bg-blue-800">
+    <div className="three-icon-home text-white">
         <h1>We have you covered!</h1>
         <p>Copy</p>
         <div className="grid lg:grid-cols-3 ">

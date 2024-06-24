@@ -6,9 +6,9 @@ const libre = Libre_Caslon_Display({ subsets: ["latin"], weight: "400" });
 
 export default function LeftPhoto() {
   return (
-    <div className="grid lg:grid-cols-2">
+    <div className="grid lg:grid-cols-2 three-icon-home">
       <div>
-        <h1 className={`${libre.className} text-8xl text-blue-900`}>
+        <h1 className={`${libre.className} text-8xl text-white`}>
           Quality doors, professional service
         </h1>
       </div>
