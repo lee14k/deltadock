@@ -6,7 +6,7 @@ const libre = Libre_Caslon_Display({ subsets: ["latin"], weight: "400" });
 
 export default function HomeHeader() {
   return (
-    <div className="grid lg:grid-cols-2">
+    <div className="grid lg:grid-cols-2 homeheaderbg pb-24">
       <div>
         <ArchShape />
       </div>
