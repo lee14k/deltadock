@@ -24,3 +24,7 @@
   -o-transform: rotate(45deg);
   transform-origin: 100% 100%;
 }
+
+.customcontact {
+  background-image: url('/ddcontactb.jpg');
+}

@@ -1,33 +1,31 @@
 import { useState } from "react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import { Switch } from "@headlessui/react";
-import { Della_Respira } from "next/font/google";
 import Link from "next/link";
-const della = Della_Respira({ subsets: ["latin"], weight: "400" });
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
 export default function ContactFill() {
   const [agreed, setAgreed] = useState(false);
-  const [isModalOpen, setIsModalOpen] = useState(false); 
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-  
+
     // Create a FormData object, passing in the form event target
     const form = event.target;
     const formData = new FormData(form);
-  
+
     // Retrieve form data using FormData methods
     const data = {
-      firstName: formData.get('firstName'),
-      lastName: formData.get('lastName'),
-      email: formData.get('email'),
-      phoneNumber: formData.get('phoneNumber'),
-      message: formData.get('message'),
+      firstName: formData.get("firstName"),
+      lastName: formData.get("lastName"),
+      email: formData.get("email"),
+      phoneNumber: formData.get("phoneNumber"),
+      message: formData.get("message"),
     };
-    
+
     try {
       const response = await fetch("/api/send-contact-form", {
         method: "POST",
@@ -36,7 +34,7 @@ export default function ContactFill() {
         },
         body: JSON.stringify(data),
       });
-  
+
       if (response.ok) {
         setIsModalOpen(true);
         console.log("Form submitted successfully");
@@ -47,27 +45,41 @@ export default function ContactFill() {
       console.error("There was an error submitting the form:", error);
     }
   };
-      const closeModal = () => {
-     setIsModalOpen(false);
-   };
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
 
   return (
-    <div className="isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
-      <div className="mx-auto max-w-2xl text-center">
+    <div className="isolate px-6 py-24 sm:py-32 lg:px-8 grid lg:grid-cols-2 customcontact">
+      <div className="mx-auto max-w-2xl text-center grid bg-white">
         <h2
-          className={`text-5xl font-bold tracking-tight text-gray-900 sm:text-7xl ${della.className}`}
+          className={`text-5xl font-bold tracking-tight text-gray-900 sm:text-7xl `}
         >
           Contact Us
         </h2>
-        <h2
-          className={`text-4xl font-bold tracking-tight text-gray-900 sm:text-7xl ${della.className}`}
-        >
-          Questions? Call (906)-221-5371
-        </h2>
+<div><h3>Address</h3>
+<span></span>
+<span></span>
+</div>
+<div><h3>Phone</h3>
+<span></span>
+<span></span>
+<span></span>
+
+</div>
+<div><h3>Email</h3>
+<span></span>
+
+</div>
+<h4>Find us on Facebook!</h4>
+
+
+
+        <p> Questions? Call (906)-221-5371</p>
       </div>
       <form
         method="POST"
-        className="mx-auto mt-16 max-w-xl sm:mt-20"
+        className="mx-auto mt-16 max-w-xl sm:mt-20 bg-white"
         onSubmit={handleSubmit}
       >
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
@@ -197,20 +209,22 @@ export default function ContactFill() {
           </button>
         </div>
         {isModalOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center">
-          <div className="modal-bg fixed inset-0 bg-black opacity-50"></div>
-          <div className="modal-content bg-white p-4 rounded-lg shadow-lg z-50">
-            <p className="text-lg font-semibold text-green-600">Submission Successful!</p>
-            <p>Your submission was successful. Thank you!</p>
-            <button
-              onClick={closeModal}
-              className="mt-4 bg-red-600 text-white py-2 px-4 rounded hover:bg-red-500"
-            >
-              Close
-            </button>
+          <div className="fixed inset-0 z-50 flex items-center justify-center">
+            <div className="modal-bg fixed inset-0 bg-black opacity-50"></div>
+            <div className="modal-content bg-white p-4 rounded-lg shadow-lg z-50">
+              <p className="text-lg font-semibold text-green-600">
+                Submission Successful!
+              </p>
+              <p>Your submission was successful. Thank you!</p>
+              <button
+                onClick={closeModal}
+                className="mt-4 bg-red-600 text-white py-2 px-4 rounded hover:bg-red-500"
+              >
+                Close
+              </button>
+            </div>
           </div>
-        </div>
-      )}
+        )}
       </form>
     </div>
   );
