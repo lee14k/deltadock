@@ -8,7 +8,7 @@ export default function Document() {
           name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
         />
-      <body>
+      <body className="overflow-x-hidden	">
         <Main />
         <NextScript />
       </body>

@@ -21,12 +21,12 @@ export default function ThreeCol() {
         {groups.map((group, index) => (
           <div key={index} className="relative flex flex-col items-center" style={{ width: '600px', height: '650px' }}>
             <svg
-              width="700"
+              width="650"
               height="650"
-              viewBox="0 0 700 650"
+              viewBox="0 0 750 650"
               xmlns="http://www.w3.org/2000/svg"
               className="absolute"
-              style={{ top: '0px', left: '50%', transform: 'translateX(-50%)', zIndex: 0 }}
+              style={{ top: '0px', left: '51%', transform: 'translateX(-49%)', zIndex: 0 }}
             >
               <defs>
                 <pattern id={`img${index}`} patternUnits="userSpaceOnUse" width="700" height="650">
@@ -39,12 +39,12 @@ export default function ThreeCol() {
               className="flex flex-col justify-center items-center"
               style={{
                 zIndex: 1,
-                width: '50%',
+                width: '70%',
                 height: '100%',
                 position: 'relative',
                 top: '0px',
                 left: '0px',
-                padding: '10px',
+                padding: '0px',
                 boxSizing: 'border-box',
               }}
             >

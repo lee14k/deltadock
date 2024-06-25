@@ -44,3 +44,8 @@ background: linear-gradient(180deg, rgba(255,250,241,1) 0%, rgba(12,25,91,1) 100
   background: rgba(12,25,91,1)
 
 }
+
+.openers {
+  background: rgb(255,250,241);
+background: linear-gradient(180deg, rgba(255,250,241,1) 0%, rgba(235,98,0,1) 100%);
+}

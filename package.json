@@ -15,13 +15,21 @@
     "@heroicons/react": "^2.1.4",
     "@mui/icons-material": "^5.15.20",
     "@mui/material": "^5.15.20",
+    "@vercel/edge-config": "^1.2.0",
+    "axios": "^1.7.2",
     "framer-motion": "^11.2.11",
     "hamburger-react": "^2.5.1",
     "next": "14.2.3",
+    "puppeteer": "^22.12.0",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
     "react": "^18",
     "react-dom": "^18",
+    "react-elfsight-widget": "^1.1.1",
+    "react-google-reviews": "^1.1.1",
     "react-responsive": "^10.0.0",
-    "react-use": "^17.5.0"
+    "react-use": "^17.5.0",
+    "vercel": "^34.2.7"
   },
   "devDependencies": {
     "postcss": "^8",
