@@ -17,8 +17,8 @@ export default function HomeHeader() {
         width={500}
         height={500}
         />
-        <h1 className={`${libre.className} text-8xl text-blue-900`}>Quality doors, professional service</h1>
-        <button className="border-2 border-orange-900 rounded-lg	">
+        <h1 className={`${libre.className} text-8xl text-bold text-blue-900`}>Quality doors, professional service</h1>
+        <button className={`border-2 border-doorange rounded-full	text-doorange text-6xl p-4 w-1/2 ${libre.className} `}>
             Contact Us
         </button>
       </div>

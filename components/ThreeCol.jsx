@@ -1,10 +1,13 @@
+import { Libre_Caslon_Display } from "next/font/google";
+const libre = Libre_Caslon_Display({ subsets: ["latin"], weight: "400" });
+
 export default function ThreeCol() {
   const groups = [1, 2, 3, 4]; // Array to map over, adjust as needed
   const images = [
     "/repairdd.jpg",
     "/loadingdd.jpg",
-    "installdd.jpg",
-    "installdd.jpg",
+    "/installdd.jpg",
+    "/installdd.jpg",
   ];
   const headings = ["Overhead Garage Door Maintenance & Installation", "Openers", "Custom Painting", "Commercial Doors"];
   const descriptions = [
@@ -13,10 +16,11 @@ export default function ThreeCol() {
     "We offer a wide range of installation services for your garage door. Our team of experts can fix any issue you may have with your garage door.",
     "We offer a wide range of installation services for your garage door. Our team of experts can fix any issue you may have with your garage door.",
   ];
+  
 
   return (
     <div className="flex flex-col justify-center ourservices py-24">
-      <h1 className="text-center text-7xl font-bold mb-8">Our Services</h1>
+      <h1 className={`${libre.className} text-center text-7xl font-bold mb-8`}>Our Services</h1>
       <div className="grid lg:grid-cols-4 gap-2">
         {groups.map((group, index) => (
           <div key={index} className="relative flex flex-col items-center" style={{ width: '600px', height: '650px' }}>
@@ -49,7 +53,7 @@ export default function ThreeCol() {
               }}
             >
               <div className="text-center mt-4 text-white p-4 rounded bg-black bg-opacity-50">
-                <h4 className="text-4xl font-bold">{headings[index]}</h4>
+                <h4 className={` ${libre.className} text-5xl font-bold`}>{headings[index]}</h4>
               </div>
             </div>
           </div>
