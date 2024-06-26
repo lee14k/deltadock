@@ -10,7 +10,7 @@ const navigation = [
   {
     name: "Services",
     href: "/",
-    submenu: [
+    children: [
       { name: "Overhead Garage Doors", href: "/overhead-garage-doors" },
       { name: "Commercial Doors", href: "/commercial-doors" },
       { name: "Openers", href: "/openers" },

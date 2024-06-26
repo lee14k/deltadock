@@ -2,8 +2,12 @@ import { useEffect, useState } from "react";
 import { Box, Typography, Rating } from "@mui/material";
 import { reviewsData } from "../public/reviews";
 
+// Import the Libre Caslon Display font
+import { Libre_Caslon_Display } from "next/font/google";
+const libre = Libre_Caslon_Display({ subsets: ["latin"], weight: "400" });
+
 const GoogleReviews = () => {
-const reviews= [
+  const reviews = [
     {
       "user": "Alan Miller",
       "rating": 5,
@@ -19,7 +23,7 @@ const reviews= [
       "rating": 5,
       "snippet": "Highly recommend! Quick to respond and great service. Installed new garage door within a short timeframe, can’t say enough good things. You can’t go wrong with Cory and Katrina!!"
     }
-  ]
+  ];
 
   return (
     <Box sx={{ maxWidth: 600, margin: "auto", padding: 2 }}>
@@ -27,20 +31,20 @@ const reviews= [
       <Box component="ul" sx={{ listStyle: "none", padding: 0 }}>
         {reviews.map((review, index) => (
           <Box
-            component="li"
             key={index}
-            sx={{
-              marginBottom: 2,
-              padding: 2,
-              border: "1px solid #ccc",
-              borderRadius: 2,
-            }}
+            className="homeheaderbg text-black rounded-lg shadow-md p-4 mb-4 "
           >
-            <Typography variant="h6" component="p">
+            <Typography
+              variant="h6"
+              component="p"
+              className={`text-4xl mb-2 ${libre.className}`}
+            >
               {review.user}
             </Typography>
             <Rating name="read-only" value={review.rating} readOnly />
-            <Typography variant="body2">{review.snippet}</Typography>
+            <Typography variant="body2" className="text-xl">
+              {review.snippet}
+            </Typography>
           </Box>
         ))}
       </Box>

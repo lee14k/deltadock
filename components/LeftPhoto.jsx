@@ -13,8 +13,7 @@ export default function LeftPhoto() {
       <div className="flex flex-col gap-12">
     
         <h1 className={`${libre.className} text-8xl text-blue-900`}>American made, high quality doors</h1>
- <p>Proudly using Sherwin-Williams paints for a superior finish</p>
- <p>Need it custom painted to match your house? </p>
+        <p>Need it custom painted to match your house? Proudly using Sherwin-Williams paints for a superior finish </p>
  <p>Opener making funny noises? We can get them running or replace them</p>
  <p>Can you see light from the side or bottom of the door? We have weatherstrip and bottom seals to keep the wind and weather out.</p>
  <p>Already bought your door or opener? Let our skilled technicians do the labor for you!</p>
