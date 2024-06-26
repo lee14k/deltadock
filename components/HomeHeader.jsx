@@ -6,7 +6,7 @@ const libre = Libre_Caslon_Display({ subsets: ["latin"], weight: "400" });
 
 export default function HomeHeader() {
   return (
-    <div className="grid lg:grid-cols-2 homeheaderbg pb-24">
+    <div className="grid lg:grid-cols-2 homeheaderbg pb-24 gap-24">
       <div>
         <ArchShape />
       </div>
@@ -14,13 +14,14 @@ export default function HomeHeader() {
         <Image
         src='/dddlogo.png'
         alt='logo'
-        width={500}
-        height={500}
+        width={600}
+        height={600}
         />
-        <h1 className={`${libre.className} text-8xl text-bold text-blue-900`}>Quality doors, professional service</h1>
-        <button className={`border-2 border-doorange rounded-full	text-doorange text-6xl p-4 w-1/2 ${libre.className} `}>
+        <div className="ml-12 my-4">  <h1 className={`${libre.className} font-bold text-8xl text-bold text-blue-900`}>Quality doors, professional service</h1>
+        <button className={`border-2 border-doorange rounded-full	text-doorange text-6xl p-4 w-4/5 font-bold my-12 ${libre.className} `}>
             Contact Us
-        </button>
+        </button></div>
+      
       </div>
     </div>
   );

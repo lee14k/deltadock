@@ -29,6 +29,7 @@
 
 .customcontact {
   background-image: url('/ddcontactb.jpg');
+  background-size: cover;
 }
 
 .homeheaderbg {

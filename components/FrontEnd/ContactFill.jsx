@@ -2,6 +2,9 @@ import { useState } from "react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import { Switch } from "@headlessui/react";
 import Link from "next/link";
+import { Libre_Caslon_Display } from "next/font/google";
+
+const libre = Libre_Caslon_Display({ subsets: ["latin"], weight: "400" });
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
@@ -50,25 +53,25 @@ export default function ContactFill() {
   };
 
   return (
-    <div className="isolate px-6 py-24 sm:py-32 lg:px-8 grid lg:grid-cols-2 customcontact">
-      <div className="mx-auto max-w-2xl text-center grid bg-white">
+    <div className="isolate px-6 py-24 sm:py-32 lg:px-8 grid lg:grid-cols-2 customcontact ">
+      <div className="mx-auto max-w-2xl grid bg-white px-48 text-left">
         <h2
-          className={`text-5xl font-bold tracking-tight text-gray-900 sm:text-7xl `}
+          className={`text-4xl font-bold tracking-tight text-gray-900 sm:text-7xl py-10 ${libre.className} `}
         >
           Contact Us
         </h2>
-<div><h3>Address</h3>
-<span></span>
-<span></span>
+<div className="flex flex-col text-left my-2"><h3>Address</h3>
+<span>PO Box 36</span>
+<span>Rapid River, MI 49878</span>
 </div>
-<div><h3>Phone</h3>
-<span></span>
-<span></span>
-<span></span>
+<div className="flex flex-col text-left my-2"><h3>Phone</h3>
+<span>Office 906.428.1294</span>
+<span>Cory 906.399.0126</span>
+<span>Katrina 906.399.0891</span>
 
 </div>
-<div><h3>Email</h3>
-<span></span>
+<div className="flex flex-col text-left my-2"><h3>Email</h3>
+<span>deltadockequipment@gmail.com</span>
 
 </div>
 <h4>Find us on Facebook!</h4>
@@ -76,6 +79,7 @@ export default function ContactFill() {
 
 
         <p> Questions? Call (906)-221-5371</p>
+        <button>Call us today</button>
       </div>
       <form
         method="POST"

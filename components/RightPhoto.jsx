@@ -9,7 +9,7 @@ export default function RightPhoto() {
   return (
     <div className="grid lg:grid-cols-2 three-icon-home">
       <div>
-        <h1 className={`${libre.className} my-4 text-8xl text-white`}>
+        <h1 className={`${libre.className} font-bold my-4 text-8xl text-white`}>
 Don't just take our word for it!        </h1>
         <GoogleReviews />
       </div>
