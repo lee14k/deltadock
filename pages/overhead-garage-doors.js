@@ -17,20 +17,14 @@ export default function OverheadGarageDoors () {
       </div>
       <div className="flex flex-col gap-12 homeheaderbg">
         <h1 className={`${libre.className} text-4xl lg:text-8xl text-blue-900 font-bold`}>
-        Overhead Garage Doors
+        Overhead Garage Door Maintenance & Installation
         </h1>
         <p className="text-lg lg:text-xl">
-          Need it custom painted to match your house? Proudly using Sherwin-Williams paints for a superior finish.
+        We can install, service, and repair broken springs, cables, hinges, and/or rollers, torison spring conversions, weatherstrip, and bottom seals. 
         </p>
         <p className="text-lg lg:text-xl">
-          Opener making funny noises? We can get them running or replace them.
-        </p>
-        <p className="text-lg lg:text-xl">
-          Can you see light from the side or bottom of the door? We have weatherstrip and bottom seals to keep the wind and weather out.
-        </p>
-        <p className="text-lg lg:text-xl">
-          Already bought your door or opener? Let our skilled technicians do the labor for you!
-        </p>
+Let our technicians come out for a yearly tune up on your garage doors and openers.        </p>
+     
       </div>
     </div>
             <Footer/>

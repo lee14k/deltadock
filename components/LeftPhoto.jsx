@@ -16,17 +16,21 @@ export default function LeftPhoto() {
           American made, high quality doors
         </h1>
         <p className="text-lg lg:text-xl">
-          Need it custom painted to match your house? Proudly using Sherwin-Williams paints for a superior finish.
+          Need it custom painted to match your house? 
         </p>
+        <p>Proudly using Sherwin-Williams paints for a superior finish.</p>
         <p className="text-lg lg:text-xl">
-          Opener making funny noises? We can get them running or replace them.
+          Opener making funny noises?
         </p>
+        <p> We can get them running or replace them.</p>
         <p className="text-lg lg:text-xl">
-          Can you see light from the side or bottom of the door? We have weatherstrip and bottom seals to keep the wind and weather out.
+          Can you see light from the side or bottom of the door? 
         </p>
+        <p>We have weatherstrip and bottom seals to keep the wind and weather out.</p>
         <p className="text-lg lg:text-xl">
-          Already bought your door or opener? Let our skilled technicians do the labor for you!
+          Already bought your door or opener? 
         </p>
+        <p>Let our skilled technicians do the labor for you!</p>
       </div>
     </div>
   );

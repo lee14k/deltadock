@@ -11,13 +11,12 @@ const FIRST_IMAGE = {
 
 export default function Slider () {
     return (
-<div>
-/* ... */
+<div className='w-1/3'>
+
   <ReactBeforeSliderComponent
       firstImage={FIRST_IMAGE}
       secondImage={SECOND_IMAGE}
   />
-  /* ... */
 
     </div>
     )
