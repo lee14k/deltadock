@@ -10,9 +10,9 @@ export default function ThreeColIcon() {
 
   const headings = ["Quality Doors", "Professional Service", "Locally Founded"];
   const descriptions = [
-    "Dealers of Haas Door, Clopay, American Overhead Doors, Ideal Door, Hormann, C.H.I Overhead Doors, Lift Master, and Manaras Openers.",
+    "Dealers of Haas Door, Clopay, American Overhead Doors, C.H.I Overhead Doors, Lift Master, and Manaras Openers.",
     "We have 3 full-time skilled service technicians",
-    "Formerly known as Delta Door Co., founded in 1988, we re-branded as Delta Door & Dock in October 2022 when we purchased the company.",
+    "Formerly known as Delta Door Co., founded in 1977, we re-branded as Delta Door & Dock in October 2022 when we purchased the company.",
   ];
 
   return (

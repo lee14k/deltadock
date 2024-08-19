@@ -67,18 +67,16 @@ export default function ContactFill() {
         </div>
         <div className="flex flex-col my-2">
           <h3 className="text-2xl  font-semibold text-gray-900">Phone</h3>
-          <span>Office 906.428.1294</span>
-          <span>Cory 906.399.0126</span>
-          <span>Katrina 906.399.0891</span>
+          <span>Office <a href="tel:+19064281294">906.428.1294</a> </span>
         </div>
         <div className="flex flex-col my-2">
           <h3 className="text-2xl font-semibold text-gray-900">Email</h3>
-          <span>deltadockequipment@gmail.com</span>
+          <span><a href="mailto:deltadockequipment@gmail.com">deltadockequipment@gmail.com</a></span>
         </div>
         <h4 className="text-2xl  font-semibold text-gray-900 mt-4">Find us on Facebook!</h4>     <Link href='https://www.facebook.com/profile.php?id=100084725174383'>
                 <FacebookTwoToneIcon fontSize="large"/>
               </Link>
-        <p className="text-2xl text-gray-900">Questions? Call (906)-221-5371</p>
+        <p className="text-2xl text-gray-900">Questions? Call  <a href="tel:+19064281294">906.428.1294</a></p>
         <button className="mt-2 bg-sky-600 text-white py-2 px-4 rounded hover:bg-sky-500">Call us today</button>
       </div>
 
