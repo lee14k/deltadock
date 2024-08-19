@@ -9,7 +9,7 @@ const ArchShape = () => (
     >
       <defs>
         <pattern id="imgPattern" patternUnits="userSpaceOnUse" width="1000" height="1000">
-          <image href="/archone.jpg" x="0" y="0" width="1000" height="1000" />
+          <image href="/dd_homepg.jpg" x="0" y="0" width="1000" height="1000" />
         </pattern>
       </defs>
       <g>
