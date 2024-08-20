@@ -4,8 +4,8 @@ import 'react-before-after-slider-component/dist/build.css';
 
 const imagePairs = [
     {
-        firstImage: { imageUrl: '/dd_before8.jpg' },
-        secondImage: { imageUrl: '/dd_after8.jpg' }
+        firstImage: { imageUrl: '/dd_before8.jpeg' },
+        secondImage: { imageUrl: '/dd_after8.jpeg' }
     },
     {
         firstImage: { imageUrl: '/dd_before1.jpeg' },
@@ -16,10 +16,6 @@ const imagePairs = [
         secondImage: { imageUrl: '/dd_after7.jpeg' }
     },
     {
-        firstImage: { imageUrl: '/dd_before6.jpeg' },
-        secondImage: { imageUrl: '/dd_after6.jpeg' }
-    },//fix this one
-    {
         firstImage: { imageUrl: '/dd_before5.jpeg' },
         secondImage: { imageUrl: '/dd_after5.jpeg' }
     }
@@ -27,9 +23,9 @@ const imagePairs = [
 
 export default function Sliders() {
     return (
-        <div className="sliders-container">
+        <div className="grid grid-cols-4 gap-4">
             {imagePairs.map((pair, index) => (
-                <div key={index} className='w-1/3'>
+                <div key={index} className='slider-item'>
                     <ReactBeforeSliderComponent
                         firstImage={pair.firstImage}
                         secondImage={pair.secondImage}
