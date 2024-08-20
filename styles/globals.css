@@ -98,3 +98,12 @@ background: linear-gradient(180deg, rgba(255,250,241,1) 0%, rgba(235,98,0,1) 100
 .indicator-dot.active {
   opacity: 1;
 }
+.headshotcircle {
+  height:250px;
+  width:250px;
+background-size:cover;
+  border-radius: 50%;
+
+  margin-top:20px;
+;
+}
