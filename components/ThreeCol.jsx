@@ -11,7 +11,7 @@ export default function ThreeCol() {
     "/installdd.jpg",
   ];
   const headings = [
-    "Overhead Garage Door Maintenance & Installation",
+    "Maintenance & Installation",
     "Openers",
     "Custom Painting",
     "Commercial Doors",

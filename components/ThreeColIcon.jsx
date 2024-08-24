@@ -18,13 +18,13 @@ export default function ThreeColIcon() {
   return (
     <div className="three-icon-home text-white flex flex-col justify-center items-center gap-12">
       <h1 className={`${libre.className} text-7xl text-center`}>We have you covered!</h1>
-      <p className={`${libre.className} mx-48 text-center text-2xl`}>We service, install, and repair overhead garage doors, openers, and loading docks for the residential and commercial customers within a 2-hour radius of Escanaba, MI</p>
+      <p className={` mx-48 text-center text-2xl`}>We service, install, and repair overhead garage doors, openers, and loading docks for the residential and commercial customers within a 2-hour radius of Escanaba, MI</p>
       <div className="grid lg:grid-cols-3 gap-24 lg:gap-36 mb-24">
         {groups.map((icon, index) => (
           <div key={index} className="text-center">
             <img src={icon} alt={`Icon ${index + 1}`} className="mx-auto mb-4" />
             <h4 className={`${libre.className} text-5xl font-bold mb-2`}>{headings[index]}</h4>
-            <p className={`${libre.className} text-2xl mx-16 text-center`}>{descriptions[index]}</p>
+            <p className={`text-2xl mx-16 text-center`}>{descriptions[index]}</p>
           </div>
         ))}
       </div>

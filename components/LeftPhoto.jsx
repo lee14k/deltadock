@@ -12,10 +12,10 @@ export default function LeftPhoto() {
         <ArchShape />
       </div>
       <div className="flex flex-col gap-12">
-        <h1 className={`${libre.className} text-4xl lg:text-8xl text-blue-900 font-bold`}>
+        <h1 className={`${libre.className} text-4xl lg:text-7xl text-blue-900 font-bold`}>
           American made, high quality doors
         </h1>
-        <p className="text-lg lg:text-xl">
+        <p className={`${libre.className} text-xl lg:text-4xl`}>
           Need it custom painted to match your house? 
         </p>
         <p>Proudly using Sherwin-Williams paints for a superior finish.</p>
