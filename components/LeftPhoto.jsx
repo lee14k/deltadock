@@ -18,16 +18,16 @@ export default function LeftPhoto() {
         <p className={`${libre.className} text-xl lg:text-4xl`}>
           Need it custom painted to match your house? 
         </p>
-        <p>Proudly using Sherwin-Williams paints for a superior finish.</p>
-        <p className="text-lg lg:text-xl">
+        <p >Proudly using Sherwin-Williams paints for a superior finish.</p>
+        <p className={`${libre.className} text-xl lg:text-4xl`}>
           Opener making funny noises?
         </p>
         <p> We can get them running or replace them.</p>
-        <p className="text-lg lg:text-xl">
+        <p className={`${libre.className} text-xl lg:text-4xl`}>
           Can you see light from the side or bottom of the door? 
         </p>
         <p>We have weatherstrip and bottom seals to keep the wind and weather out.</p>
-        <p className="text-lg lg:text-xl">
+        <p className={`${libre.className} text-xl lg:text-4xl`}>
           Already bought your door or opener? 
         </p>
         <p>Let our skilled technicians do the labor for you!</p>
