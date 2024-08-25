@@ -55,8 +55,8 @@ export default function ContactFill() {
   };
 
   return (
-    <div className="isolate px-6 py-24 sm:py-32 lg:px-8 grid lg:grid-cols-2 customcontact">
-      <div className="mx-auto  grid bg-white py-12 px-48 text-left">
+    <div className="isolate px-6 sm:py-32 grid lg:grid-cols-2 customcontact">
+      <div className="mx-auto  flex flex-col justify-between bg-white pb-12  text-left">
         <h2 className={`text-4xl font-bold tracking-tight text-gray-900 sm:text-7xl py-10 ${libre.className}`}>
           Contact Us
         </h2>
@@ -80,7 +80,7 @@ export default function ContactFill() {
         <button className="mt-2 bg-sky-600 text-white py-2 px-4 rounded hover:bg-sky-500">Call us today</button>
       </div>
 
-      <form method="POST" className="mx-auto mt-16 max-w-2xl sm:mt-20 bg-white px-6 lg:px-12" onSubmit={handleSubmit}>
+      <form method="POST" className="mx-auto bg-white " onSubmit={handleSubmit}>
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
           <div>
             <label htmlFor="firstName" className="block text-sm font-semibold leading-6 text-gray-900">First name</label>
