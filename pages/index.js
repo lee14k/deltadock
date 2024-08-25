@@ -10,7 +10,7 @@ import Footer from "@/components/FrontEnd/Footer";
 
 export default function Home() {
   return (
-    <div>
+    <div className="homeheaderbg">
       <Navbar/>
       <HomeHeader />
       <ThreeCol />

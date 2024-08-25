@@ -105,5 +105,9 @@ background-size:cover;
   border-radius: 50%;
 
   margin-top:20px;
-;
+}
+
+.gradientpaletoblue {
+  background: rgb(255,250,241);
+  background: linear-gradient(176deg, rgba(255,250,241,1) 0%, rgba(12,25,91,1) 100%);
 }

@@ -20,9 +20,11 @@ export default function HomeHeader() {
         <div className="ml-12 my-4">  <h1 className={`${libre.className} font-bold text-8xl text-bold text-blue-900`}>Quality Doors, Professional Service</h1>
             <Link href="/contact">
                 <button
-                    className={`border-2 border-doorange rounded-full	text-doorange text-6xl p-4 w-4/5 font-bold my-12 ${libre.className} `}>
+                    className={`border-2 border-doorange rounded-full text-doorange text-6xl p-4 w-4/5 font-bold my-12 hover:bg-doorange hover:text-white transition-colors duration-300 ${libre.className}`}
+                >
                     Contact Us
                 </button>
+
             </Link>
         </div>
 

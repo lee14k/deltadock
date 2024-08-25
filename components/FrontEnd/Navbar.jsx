@@ -42,7 +42,7 @@ export default function Navbar() {
       {isMobile ? (
         <NavMobile />
       ) : (
-        <Disclosure as="nav" className="py-12 text-4xl homeheaderbg">
+        <Disclosure as="nav" className="py-12 text-4xl bg-inherit">
           {({ open }) => (
             <>
               <div className="flex justify-center pt-8">
