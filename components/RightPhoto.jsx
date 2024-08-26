@@ -14,8 +14,7 @@ Don't just take our word for it!        </h1>
         <GoogleReviews />
       </div>
       <div className="grid grid-cols-1 ">
-        <ArchShape />
-          <div className="pl-12">
+          <ArchShape imageSrc="/dd_doors4.jpeg" patternId="uniquePattern1" />          <div className="pl-12">
               <Link href="/our-team">
                   <button
                       className={`border-2 border-doorange rounded-full text-white text-2xl font-bold hover:bg-doorange transition-colors duration-300 ${libre.className} py-6 px-6 `}>Learn

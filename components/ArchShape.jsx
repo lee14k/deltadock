@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ArchShape = ({ imageSrc }) => (
+const ArchShape = ({ imageSrc, patternId }) => (
     <div className="w-full">
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -9,7 +9,7 @@ const ArchShape = ({ imageSrc }) => (
         >
             <defs>
                 <pattern
-                    id="imgPattern"
+                    id={patternId}
                     patternUnits="objectBoundingBox"
                     patternContentUnits="objectBoundingBox"
                     width="1"
@@ -27,7 +27,7 @@ const ArchShape = ({ imageSrc }) => (
             </defs>
             <g>
                 <path
-                    fill="url(#imgPattern)"
+                    fill={`url(#${patternId})`}
                     d="M 300 2700 L 2700 2700 L 2700 1650 A 1200 1200 0 0 0 300 1650 Z"
                     fillOpacity="1"
                     fillRule="nonzero"
