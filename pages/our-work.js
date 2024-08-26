@@ -15,8 +15,8 @@ export default function OurTeam () {
                 <h1 className={`${libre.className} text-2xl lg:text-8xl font-bold`}>Before & After</h1>
                 <p>copy here</p>
                 <Slider/>
-                <Footer/>
             </div>
+            <Footer/>
         </div>
     )
 }
