@@ -116,3 +116,8 @@ background-size:cover;
   background: rgb(255,250,241);
   background: linear-gradient(176deg, rgba(255,250,241,1) 0%, rgba(235,98,0,1) 100%);
 }
+
+.gradientbluetoorange {
+  background: rgb(12,25,91);
+  background: linear-gradient(176deg, rgba(12,25,91,1) 0%, rgba(255,192,146,1) 100%);
+}

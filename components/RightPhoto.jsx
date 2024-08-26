@@ -13,8 +13,9 @@ export default function RightPhoto() {
 Don't just take our word for it!        </h1>
         <GoogleReviews />
       </div>
-      <div className="flex flex-col gap-12">
+      <div className="grid grid-cols-1 gap-12">
         <ArchShape />
+          <p className="mx-12">Learn more about our family owned and operated business</p>
       </div>
     </div>
   );

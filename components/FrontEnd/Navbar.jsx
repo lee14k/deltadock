@@ -5,6 +5,9 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import NavMobile from "./NavMobile";
 import { useMediaQuery } from "react-responsive";
+import { Libre_Caslon_Display } from "next/font/google";
+
+const libre = Libre_Caslon_Display({ subsets: ["latin"], weight: "400" });
 const navigation = [
   { name: "Home", href: "/", current: true },
   {
@@ -36,7 +39,7 @@ export default function Navbar() {
   };
 
   return (
-    <div className="">
+    <div className={`${libre.className} text-4xl lg:text-6xl font-bold`} >
       {" "}
       {/* Added a surrounding div */}
       {isMobile ? (
