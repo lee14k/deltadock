@@ -10,17 +10,23 @@ export default function LeftPhoto() {
     <div className="grid lg:grid-cols-2">
       <div className="grid grid-cols-1">
         <ArchShape imageSrc="/dd_doors1.jpeg" patternId="uniquePattern3"/>
-        <button
-            className={`border-2 border-doorange rounded-full hover:bg-white text-white text-4xl lg:text-6xl p-4 w-4/5 font-bold my-12 bg-doorange hover:text-doorange transition-colors duration-300 ${libre.className}`}>
-          Call us today!
-        </button>
+        <div className="pl-16">
+          <Link href="/contact">
+            <button
+                className={`border-2 border-doorange rounded-full hover:bg-white text-white text-4xl lg:text-6xl font-bold my-12 bg-doorange hover:text-doorange transition-colors duration-300 ${libre.className} py-6 px-6 w-3/4`}>
+              Call us today!
+            </button>
+          </Link>
+        </div>
+
+
       </div>
       <div className="flex flex-col gap-12">
         <h1 className={`${libre.className} text-4xl lg:text-7xl text-blue-900 font-bold`}>
           American made, high quality doors
         </h1>
         <p className={`${libre.className} text-xl lg:text-4xl`}>
-          Need it custom painted to match your house? 
+        Need it custom painted to match your house?
         </p>
         <p >Proudly using Sherwin-Williams paints for a superior finish.</p>
         <p className={`${libre.className} text-xl lg:text-4xl`}>

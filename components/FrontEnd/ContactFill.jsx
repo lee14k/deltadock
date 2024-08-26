@@ -61,7 +61,7 @@ export default function ContactFill() {
           Contact Us
         </h2>
         <div className="flex flex-col my-2">
-          <h3 className="text-2xl font-semibold text-gray-900">Address</h3>
+          <h3 className="text-2xl font-semibold text-gray-900">Mailing Address</h3>
           <span>PO Box 36</span>
           <span>Rapid River, MI 49878</span>
         </div>
