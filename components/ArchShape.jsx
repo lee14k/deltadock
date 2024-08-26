@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ArchShape = () => (
+const ArchShape = ({ imageSrc }) => (
     <div className="w-full">
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -16,7 +16,7 @@ const ArchShape = () => (
                     height="1"
                 >
                     <image
-                        href="/dd_homepg.jpg"
+                        href={imageSrc}
                         preserveAspectRatio="xMidYMid slice"
                         width="1"
                         height="1"

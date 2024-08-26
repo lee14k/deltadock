@@ -9,7 +9,9 @@ export default function LeftPhoto() {
   return (
     <div className="grid lg:grid-cols-2">
       <div>
-        <ArchShape />
+        <ArchShape
+            imageSrc="/dd_doors1.jpeg"
+        />
       </div>
       <div className="flex flex-col gap-12">
         <h1 className={`${libre.className} text-4xl lg:text-7xl text-blue-900 font-bold`}>

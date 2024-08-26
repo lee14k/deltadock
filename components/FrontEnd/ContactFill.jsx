@@ -56,7 +56,7 @@ export default function ContactFill() {
 
   return (
     <div className="isolate px-6 sm:py-32 grid lg:grid-cols-2 customcontact">
-      <div className="mx-auto  flex flex-col justify-between bg-white pb-12  text-left">
+      <div className="mx-auto px-16 flex flex-col justify-between bg-white pb-12  text-left">
         <h2 className={`text-4xl font-bold tracking-tight text-gray-900 sm:text-7xl py-10 ${libre.className}`}>
           Contact Us
         </h2>
@@ -72,7 +72,7 @@ export default function ContactFill() {
         <div className="flex flex-col my-2">
           <h3 className="text-2xl font-semibold text-gray-900">Email</h3>
           <span><a href="mailto:deltadockequipment@gmail.com">deltadockequipment@gmail.com</a></span>
-        </div>
+      </div>
         <h4 className="text-2xl  font-semibold text-gray-900 mt-4">Find us on Facebook!</h4>     <Link href='https://www.facebook.com/profile.php?id=100084725174383'>
                 <FacebookTwoToneIcon fontSize="large"/>
               </Link>
@@ -81,8 +81,8 @@ export default function ContactFill() {
       </div>
 
       <form method="POST" className="mx-auto bg-white " onSubmit={handleSubmit}>
-        <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
-          <div>
+        <div className="px-16 grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2 pt-10 ">
+          <div className="">
             <label htmlFor="firstName" className="block text-sm font-semibold leading-6 text-gray-900">First name</label>
             <input type="text" name="firstName" id="firstName" autoComplete="given-name"
               className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
@@ -123,8 +123,8 @@ export default function ContactFill() {
             </Switch.Group>
           </div>
         </div>
-        <div className="mt-10">
-          <button type="submit" className="block w-full rounded-md bg-sky-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-sky-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600">
+        <div className="mt-10 pl-12">
+          <button type="submit" className="block w-1/3 rounded-md bg-sky-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-sky-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600">
             Let's talk
           </button>
         </div>
