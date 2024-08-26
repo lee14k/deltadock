@@ -49,7 +49,7 @@ function HeadshotCircle(props) {
 
     return (
         <div>
-            <div className="grid lg:grid-cols-4 gap-4">
+            <div className="grid lg:grid-cols-3 gap-4">
                 {headshots.map((pair, index) => (
                     <div key={index} className="flex flex-col justify-center items-center">
                         <div onClick={() => handleClick(pair)} className='headshotcircle object-contain' style={{

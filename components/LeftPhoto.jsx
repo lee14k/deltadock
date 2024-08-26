@@ -8,9 +8,12 @@ const libre = Libre_Caslon_Display({ subsets: ["latin"], weight: "400" });
 export default function LeftPhoto() {
   return (
     <div className="grid lg:grid-cols-2">
-      <div>
-        <ArchShape imageSrc="/dd_doors1.jpeg" patternId="uniquePattern3" />
-
+      <div className="grid grid-cols-1">
+        <ArchShape imageSrc="/dd_doors1.jpeg" patternId="uniquePattern3"/>
+        <button
+            className={`border-2 border-doorange rounded-full hover:bg-white text-white text-4xl lg:text-6xl p-4 w-4/5 font-bold my-12 bg-doorange hover:text-doorange transition-colors duration-300 ${libre.className}`}>
+          Call us today!
+        </button>
       </div>
       <div className="flex flex-col gap-12">
         <h1 className={`${libre.className} text-4xl lg:text-7xl text-blue-900 font-bold`}>
@@ -32,6 +35,9 @@ export default function LeftPhoto() {
           Already bought your door or opener? 
         </p>
         <p>Let our skilled technicians do the labor for you!</p>
+      </div>
+      <div>
+
       </div>
     </div>
   );
