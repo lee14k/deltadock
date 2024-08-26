@@ -17,6 +17,7 @@ const navigation = [
       { name: "Overhead Garage Doors", href: "/overhead-garage-doors" },
       { name: "Commercial Doors", href: "/commercial-doors" },
       { name: "Openers", href: "/openers" },
+      { name: "Loading Docks", href: "/loading-docks" },
     ],
   },
   { name: "Our Team", href: "/our-team" },
