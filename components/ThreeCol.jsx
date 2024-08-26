@@ -1,4 +1,5 @@
 import { Libre_Caslon_Display } from "next/font/google";
+import Link from "next/link";
 
 const libre = Libre_Caslon_Display({ subsets: ["latin"], weight: "400" });
 
@@ -16,15 +17,22 @@ export default function ThreeCol() {
     "Custom Painting",
     "Commercial Doors",
   ];
+  const links =[
+      "/overhead-garage-doors",
+      "/openers",
+      "/custom-painting",
+      "/commercial-doors",
+  ]
 
   return (
     <div className="flex flex-col justify-center ourservices py-24">
       <h1 className={`${libre.className} text-center text-7xl font-bold mb-8 font-bold`}>
         Our Services
       </h1>
-      <div className="grid lg:grid-cols-4 gap-2">
+      <div className="grid lg:grid-cols-4">
         {groups.map((group, index) => (
-          <div key={index} className="relative flex flex-col items-center" style={{ width: "100%", maxWidth: "550px", height: "550px" }}>
+            <Link href={links[index]}>
+          <div key={index} className="relative flex flex-col items-center" style={{ width: "100%", maxWidth: "650px", height: "550px" }}>
             <svg
               width="100%"
               height="100%"
@@ -58,6 +66,7 @@ export default function ThreeCol() {
               </div>
             </div>
           </div>
+            </Link>
         ))}
       </div>
     </div>

@@ -9,12 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@emotion/react": "^11.11.4",
-    "@emotion/styled": "^11.11.5",
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
     "@headlessui/react": "^2.1.0",
     "@heroicons/react": "^2.1.4",
-    "@mui/icons-material": "^5.15.20",
-    "@mui/material": "^5.15.20",
+    "@mui/icons-material": "^5.16.7",
+    "@mui/material": "^5.16.7",
     "@vercel/edge-config": "^1.2.0",
     "axios": "^1.7.2",
     "framer-motion": "^11.2.11",
