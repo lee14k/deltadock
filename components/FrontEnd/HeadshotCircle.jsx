@@ -33,11 +33,6 @@ function HeadshotCircle(props) {
                 "I’ve been in the garage door industry since 2016. Since moving to the UP 2 years ago, I’ve had the privilege of working at Delta Door and Dock. I enjoy spending time with my wife and baby boy. My hobbies include hunting, fishing, and working on anything with an engine"
         },
         {
-            firstImage: '/spencer.jpg',
-            personTitle: 'Spencer',
-            bio: "This is the bio for Spencer."
-        },
-        {
             firstImage: '/brayden.jpg',
             personTitle: 'Brayden',
             bio: "I’ve been with Delta Door and Dock since they opened in 2022, but I have been in the garage door industry since 2019. In my free time, you can find me golfing with my girlfriend, camping with my family, or on the lake fishing!"
