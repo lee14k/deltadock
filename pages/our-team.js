@@ -10,7 +10,7 @@ export default function OurTeam () {
             <Navbar/>
             <div className="flex flex-col justify-center items-center">
                 <h1 className={`${libre.className} text-4xl lg:text-8xl font-bold`} >Our Team</h1>
-                               <p>Click to learn more about our crew</p>
+                <p className="py-10 text-4xl mx-24 text-center">Click to learn more about our crew</p>
             </div>
                 <HeadshotCircle/>
 

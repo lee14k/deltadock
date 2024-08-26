@@ -10,11 +10,13 @@ export default function OurTeam () {
             <Navbar/>
             <div className="flex justify-center items-center flex-col">
                 <h1 className={`${libre.className} text-4xl lg:text-8xl font-bold`}>Our Work</h1>
-                <p>copy here</p>
+                <p className="py-10 text-4xl mx-24 text-center"> Our work showcases the craftsmanship and attention to detail that defines Delta Dock and Door. Browse through our gallery to see the impact a new door can leave on any home.</p>
+                <button>Learn more about what we can offer</button>
                 <Slideshow/>
                 <h1 className={`${libre.className} text-2xl lg:text-8xl font-bold`}>Before & After</h1>
-                <p>copy here</p>
+                <p className="py-10 text-4xl mx-24 text-center">Explore the before and after photos to see the transformations we’ve brought to homes just like yours. Whether you’re looking for a new installation or you're just looking for a tune-up, our work speaks for itself.</p>
                 <Slider/>
+                <button>Call us today</button>
             </div>
             <Footer/>
         </div>

@@ -10,10 +10,10 @@ export default function LeftPhoto() {
     <div className="grid lg:grid-cols-2">
       <div className="grid grid-cols-1">
         <ArchShape imageSrc="/dd_doors1.jpeg" patternId="uniquePattern3"/>
-        <div className="pl-16">
+        <div className="flex justify-center items-center" >
           <Link href="/contact">
             <button
-                className={`border-2 border-doorange rounded-full hover:bg-white text-white text-4xl lg:text-6xl font-bold my-12 bg-doorange hover:text-doorange transition-colors duration-300 ${libre.className} py-6 px-6 w-3/4`}>
+                className={`border-2 border-doorange rounded-full hover:bg-white text-white text-4xl lg:text-6xl font-bold my-12 bg-doorange hover:text-doorange transition-colors duration-300 ${libre.className} py-12 px-32 w-full`}>
               Call us today!
             </button>
           </Link>

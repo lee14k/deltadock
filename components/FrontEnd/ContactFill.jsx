@@ -57,26 +57,31 @@ export default function ContactFill() {
   return (
     <div className="isolate px-6 sm:py-32 grid lg:grid-cols-2 customcontact">
       <div className="mx-auto px-16 flex flex-col justify-between bg-white pb-12  text-left">
-        <h2 className={`text-4xl font-bold tracking-tight text-gray-900 sm:text-7xl py-10 ${libre.className}`}>
+        <h2 className={`text-6xl font-bold tracking-tight text-gray-900 sm:text-7xl py-10 ${libre.className}`}>
           Contact Us
         </h2>
         <div className="flex flex-col my-2">
-          <h3 className="text-2xl font-semibold text-gray-900">Mailing Address</h3>
+          <h3 className={`text-4xl font-bold tracking-tight text-gray-900  ${libre.className} font-bold`}>Mailing Address</h3>
           <span>PO Box 36</span>
           <span>Rapid River, MI 49878</span>
         </div>
         <div className="flex flex-col my-2">
-          <h3 className="text-2xl  font-semibold text-gray-900">Phone</h3>
+          <h3 className={`text-4xl font-bold tracking-tight text-gray-900  ${libre.className} font-bold`}>Phone</h3>
           <span>Office <a href="tel:+19064281294">906.428.1294</a> </span>
         </div>
         <div className="flex flex-col my-2">
-          <h3 className="text-2xl font-semibold text-gray-900">Email</h3>
+          <h3 className={`text-4xl font-bold tracking-tight text-gray-900  ${libre.className} font-bold`}>Email</h3>
           <span><a href="mailto:deltadockequipment@gmail.com">deltadockequipment@gmail.com</a></span>
       </div>
-        <h4 className="text-2xl  font-semibold text-gray-900 mt-4">Find us on Facebook!</h4>     <Link href='https://www.facebook.com/profile.php?id=100084725174383'>
-                <FacebookTwoToneIcon fontSize="large"/>
-              </Link>
-        <p className="text-2xl text-gray-900">Questions? Call  <a href="tel:+19064281294">906.428.1294</a></p>
+        <div className="flex gap-4">
+          <h4 className={`text-4xl font-bold tracking-tight text-gray-900  ${libre.className} font-bold `}>Find us on
+            Facebook!</h4>
+          <Link href='https://www.facebook.com/profile.php?id=100084725174383'>
+            <FacebookTwoToneIcon fontSize="large"/>
+          </Link>
+        </div>
+
+        <p className="text-2xl text-gray-900">Questions? Call <a href="tel:+19064281294">906.428.1294</a></p>
         <button className="mt-2 bg-sky-600 text-white py-2 px-4 rounded hover:bg-sky-500">Call us today</button>
       </div>
 
