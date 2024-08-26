@@ -44,7 +44,7 @@ function Homeslider() {
             <button className="arrow left-arrow" onClick={goToPrevSlide}>
                 <ArrowBackIosIcon sx={{ fontSize: 50 }} />
             </button>
-            <div className="slideshowcontainer flex relative justify-center items-center  ">
+            <div className="w-[18rem] h-[15rem] lg:w-[90rem] lg:h-[70rem] flex relative justify-center items-center  ">
 
                 {images.map((image, index) => (
                     <div
