@@ -25,7 +25,7 @@ export default function CommercialDoors () {
                     </ul>
                 </div>
                 <div className="">
-                    <ArchShape/>
+                    <ArchShape imageSrc="dd-commercial.jpeg" patternId="dd-commercial" />
                 </div>
             </div>
             <Footer/>

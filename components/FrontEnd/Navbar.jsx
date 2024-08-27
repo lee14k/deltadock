@@ -11,7 +11,7 @@ const libre = Libre_Caslon_Display({ subsets: ["latin"], weight: "400" });
 const navigation = [
   { name: "Home", href: "/", current: true },
   {
-    name: "Services",
+    name: "Our Services",
     href: "/",
     children: [
       { name: "Overhead Garage Doors", href: "/overhead-garage-doors" },

@@ -6,7 +6,7 @@ const libre = Libre_Caslon_Display({ subsets: ["latin"], weight: "400" });
 export default function ThreeCol() {
   const groups = [1, 2, 3]; // Array to map over, adjust as needed
   const images = [
-    "/dd_doors4.jpeg",
+    "/dd-overhead.jpg",
     "/dd_openers.jpg",
     "/dd-custom-paint-3.jpg",
 
@@ -29,7 +29,7 @@ export default function ThreeCol() {
         "Loading Docks"]
     const linksTwo=[      "/commercial-doors",
         "/loading-docks",]
-const shoes=[    "/installdd.jpg",
+const shoes=[    "/dd-commercial.jpeg",
     "/loadingdd.jpg"]
   return (
     <div className="flex flex-col justify-center ourservices ">

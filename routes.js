@@ -1,7 +1,7 @@
 export const routes = [
     { name: "Home", href: "/" },
     {
-      name: "Services",
+      name: "Our Services",
       href: "/services",
       submenu: [
         { name: "Overhead Garage Doors", href: "/overhead-garage-doors" },

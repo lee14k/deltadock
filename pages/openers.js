@@ -13,7 +13,7 @@ export default function Openers () {
             <h1></h1>
             <div className="grid lg:grid-cols-2">
       <div className="">
-        <ArchShape />
+        <ArchShape imageSrc="/dd_openers.jpg" patternId="dd-openers" />
       </div>
       <div className="flex flex-col gap-12 ">
         <h1 className={`${libre.className} text-4xl lg:text-8xl text-blue-900 font-bold`}>

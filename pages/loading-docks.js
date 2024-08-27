@@ -24,7 +24,7 @@ export default function LoadingDocks () {
                     </ul>
                 </div>
                 <div>
-                    <ArchShape/>
+                    <ArchShape imageSrc="/loadingdd.jpg" patternId="dd-loading"/>
                 </div>
             </div>
             <Footer/>
