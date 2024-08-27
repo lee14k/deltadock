@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-
+import { Libre_Caslon_Display } from "next/font/google";
+const libre = Libre_Caslon_Display({ subsets: ["latin"], weight: "400" });
 function HeadshotCircle(props) {
     const [isMobile, setIsMobile] = useState(false);
     const [activePerson, setActivePerson] = useState(null); // Track which person's modal is active
@@ -22,10 +23,15 @@ function HeadshotCircle(props) {
 
     const headshots = [
         {
-            firstImage: '/katrina_cory.jpg',
-            personTitle: 'Katrina & Cory',
-            bio: "Hey, I’m Cory. I moved to the UP from the greater Milwaukee area in 2017 when Katrina and I got married. We started Delta Door & Dock in October of 2022 but I’ve been working on garage doors for over 10 years. I love spending time with my wife and our son Alden and our 3 dogs. Hey, I’m Katrina. I was born and raised in Delta County. I spent 19 years at the Escanaba Sherwin-Williams paint store working my way up from a part-time position to manager. I love playing guitar and spending time with Cory and Alden and relaxing at home with our 3 dogs."
+            firstImage: '/3973-Katrina-Nature.jpg',
+            personTitle: 'Katrina',
+            bio: "I was born and raised in Delta County.  I worked a few waitressing jobs after high school but ultimately started a career at Sherwin Williams paint store in Escanaba in 2004.  After working my way up through part-time positions to assistant manager to manager and after many discussions with Cory, I finally made the leap to prioritize our family and our new business; I “retired” in February of 2024 from Sherwin Williams and now work full time for Delta Door & Dock. I still use my knowledge of paints and colors by custom painting overhead garage doors in the summertime."
 },
+        {
+            firstImage: '/3966-Corey-Nature.jpg',
+            personTitle: 'Cory',
+            bio: "I’m Cory. I moved to the UP from the greater Milwaukee area in 2017 when Katrina and I got married. We started Delta Door & Dock in October of 2022 but I’ve been working on garage doors for over 10 years. I love spending time with my wife Katrina and our son Alden and our 3 dogs. "
+        },
         {
             firstImage: '/forrest.jpg',
             personTitle: 'Forrest',
@@ -49,16 +55,16 @@ function HeadshotCircle(props) {
 
     return (
         <div>
-            <div className="grid lg:grid-cols-3 gap-4">
+            <div className="grid lg:grid-cols-4 gap-4">
                 {headshots.map((pair, index) => (
                     <div key={index} className="flex flex-col justify-center items-center">
                         <div onClick={() => handleClick(pair)} className='headshotcircle object-contain' style={{
                             backgroundImage: `url(${pair.firstImage})`
                         }}></div>
 
-                        <div>
-                            <h2 >{pair.personTitle}</h2>
-                            {isMobile && <button onClick={() => handleClick(pair)}>Learn more</button>}
+                        <div className="flex flex-col justify-center items-center">
+                            <h2 className={`text-4xl font-bold tracking-tight text-gray-900  ${libre.className} font-bold`} >{pair.personTitle}</h2>
+                            {isMobile && <button onClick={() => handleClick(pair)} className={`border-2 border-doorange rounded-full hover:bg-white text-white text-l lg:text-xl font-bold py-2 px-12 bg-doorange hover:text-doorange transition-colors duration-300 ${libre.className} w-full`}>Learn more</button>}
                         </div>
                     </div>
                 ))}
@@ -67,10 +73,10 @@ function HeadshotCircle(props) {
             {/* Modal */}
             {activePerson && (
                 <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-                    <div className="bg-white p-4 rounded-lg shadow-lg">
-                        <h2>{activePerson.personTitle}</h2>
+                    <div className="bg-white p-4 rounded-lg shadow-lg w-1/2">
+                        <h2 className={`text-4xl font-bold tracking-tight text-gray-900  ${libre.className} font-bold`}>{activePerson.personTitle}</h2>
                         <p>{activePerson.bio}</p>
-                        <button onClick={closeModal}>Close</button>
+                        <button onClick={closeModal} className={`border-2 border-doorange rounded-full hover:bg-white text-white text-l lg:text-xl font-bold py-2 px-12 bg-doorange hover:text-doorange transition-colors duration-300 ${libre.className} w-1/4`} >Close</button>
                     </div>
                 </div>
             )}
