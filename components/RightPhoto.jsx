@@ -9,11 +9,11 @@ export default function RightPhoto() {
   return (
     <div className="grid lg:grid-cols-2 three-icon-home">
       <div>
-        <h1 className={`${libre.className} font-bold my-4 text-8xl text-white`}>
+        <h1 className={`${libre.className} font-bold my-4 text-4xl lg:text-8xl text-white text-center mt-4`}>
 Don't just take our word for it!        </h1>
         <GoogleReviews />
       </div>
-      <div className="grid grid-cols-1 ">
+      <div className="grid grid-cols-1 pb-12">
           <ArchShape imageSrc="/dd-reviews.jpg" patternId="uniquePattern1" />
           <div className="pl-12">
               <Link href="/our-team">

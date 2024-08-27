@@ -20,7 +20,7 @@ export default function LoadingDocks () {
                         Custom Painting
                     </h1>
                     <p className="text-lg lg:text-xl">
-                        We can install, service, and repair broken springs, cables, hinges, and/or rollers, torison spring conversions, weatherstrip, and bottom seals.
+                        We can install, service, and repair broken springs, cables, hinges, and/or rollers, torsion spring conversions, weatherstrip, and bottom seals.
                     </p>
                     <p className="text-lg lg:text-xl">
                         Let our technicians come out for a yearly tune up on your garage doors and openers.        </p>
