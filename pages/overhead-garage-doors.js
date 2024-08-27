@@ -16,7 +16,7 @@ export default function OverheadGarageDoors () {
         <ArchShape imageSrc="/dd-overhead.jpg" patternId="overhead-garage" />
       </div>
                 <div className="flex flex-col gap-12 justify-center items-center">
-                    <h1 className={`${libre.className} text-4xl lg:text-8xl font-bold text-center mx-12`}>
+                    <h1 className={`${libre.className} text-5xl lg:text-8xl font-bold text-center mx-12`}>
                         Overhead Garage Door Maintenance & Installation
                     </h1>
                     <div className="my-6 mx-12 flex flex-col gap-16 text-2xl">
@@ -36,7 +36,7 @@ export default function OverheadGarageDoors () {
                     </div>
                     <Link href="/contact">
                         <button
-                            className={`border-2 border-blue-900 rounded-full hover:bg-white text-white text-4xl  font-bold py-2 px-12 bg-blue-900  hover:text-blue-900  transition-colors duration-300 ${libre.className} w-full`}>
+                            className={`border-2 border-blue-900 rounded-full hover:bg-white text-white text-4xl  font-bold py-2 px-12 bg-blue-900  hover:text-blue-900  transition-colors duration-300 ${libre.className} w-full mb-6`}>
                             Call to get your consultation today!
                         </button>
                     </Link>

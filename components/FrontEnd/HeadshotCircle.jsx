@@ -76,7 +76,7 @@ function HeadshotCircle(props) {
                     <div className="bg-white p-4 rounded-lg shadow-lg w-1/2">
                         <h2 className={`text-4xl font-bold tracking-tight text-gray-900  ${libre.className} font-bold`}>{activePerson.personTitle}</h2>
                         <p>{activePerson.bio}</p>
-                        <button onClick={closeModal} className={`border-2 border-doorange rounded-full hover:bg-white text-white text-l lg:text-xl font-bold py-2 px-12 bg-doorange hover:text-doorange transition-colors duration-300 ${libre.className} w-1/4`} >Close</button>
+                        <button onClick={closeModal} className={`border-2 border-doorange rounded-full hover:bg-white text-white text-l lg:text-xl font-bold py-2 px-12 bg-doorange hover:text-doorange transition-colors duration-300 ${libre.className} w-2/4 flex justify-center items-center`} >Close</button>
                     </div>
                 </div>
             )}

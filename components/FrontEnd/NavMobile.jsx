@@ -18,7 +18,7 @@ const NavMobile = () => {
 
   return (
     <div ref={ref}>
-      <div className="bg-white mx-8 flex justify-center items-center burgercircle fancy-font">
+      <div className="bg-inherit mx-8 flex justify-center items-center burgercircle fancy-font">
         <Hamburger
           toggled={isOpen}
           size={100}

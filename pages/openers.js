@@ -18,7 +18,7 @@ export default function Openers () {
                     <h1 className={`${libre.className} text-4xl lg:text-8xl font-bold text-center mx-12`}>
                         Openers
                     </h1>
-                    <div className="my-6 mx-12 flex flex-col gap-16 text-2xl">
+                    <div className="my-6 mx-12 flex flex-col gap-16 text-2xl ">
                         <div className="flex gap-12">
                             <CheckIcon className="text-blue-900 text-5xl"/>
                             <p>We carry most universal remotes and keypads in stock. Our residential openers line is
