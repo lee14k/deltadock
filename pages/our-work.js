@@ -15,9 +15,8 @@ export default function OurTeam () {
                         <h1 className={`${libre.className} text-4xl lg:text-8xl font-bold`}>Our Work</h1>
                         <p className="py-10 text-4xl mr-10"> Our work showcases the craftsmanship and
                             attention
-                            to detail that defines Delta Dock and Door. Browse through our gallery to see the impact a
-                            new
-                            door can leave on any home.</p>
+                            to detail that defines Delta Dock and Door. Feel free to flip through our gallery to see the impact a
+                             garage door can leave on any home.</p>
                         <Link href="/contact">
                             <button
                                 className={`border-2 border-doorange rounded-full hover:bg-white text-white text-3xl font-bold py-2 px-12 bg-doorange hover:text-doorange transition-colors duration-300 ${libre.className} w-full`}>Schedule
@@ -35,7 +34,7 @@ export default function OurTeam () {
                 <h1 className={`${libre.className} text-2xl lg:text-8xl font-bold`}>Before & After</h1>
                     <p className="py-10 text-4xl mx-24 text-center">Explore our before and after photos to see the
                         transformations we’ve brought to homes just like yours. Whether you’re looking for a new
-                        installation or you're just looking for a tune-up, our work speaks for itself.</p>
+                        installation or you're just looking for a tune-up, we've got you covered.</p>
                     <Link href="/our-services">
                         <button
                             className={`border-2 border-doorange rounded-full hover:bg-white text-white text-3xl font-bold py-2 px-4 bg-doorange hover:text-doorange transition-colors duration-300 ${libre.className} w-full`}>Learn

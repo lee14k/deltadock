@@ -68,7 +68,9 @@ export default function ContactFill() {
         </div>
         <div className="flex flex-col my-2">
           <h3 className={`text-4xl font-bold tracking-tight text-gray-900  ${libre.className} font-bold`}>Phone</h3>
-          <span>Office <a href="tel:+19064281294">906.428.1294</a> </span>
+          <span>Office: 906.428.1294 </span>
+          <span>Cory: 906.399.0126 (cell)</span>
+          <span>Katrina: 906.399.0891 (cell) - Billing and Custom Painting</span>
         </div>
         <div className="flex flex-col my-2">
           <h3 className={`text-4xl font-bold tracking-tight text-gray-900  ${libre.className} font-bold`}>Email</h3>
@@ -82,7 +84,7 @@ export default function ContactFill() {
           </Link>
         </div>
 
-        <p className="text-2xl text-gray-900">Questions? Call <a href="tel:+19064281294">906.428.1294</a></p>
+        <p className={`text-2xl text-gray-900 ${libre.className}`}>Questions? Call <a href="tel:+19064281294">906.428.1294</a></p>
         <div className="grid grid-cols-2 mt-12">
           <a href="tel:+19064281294">
             <button
