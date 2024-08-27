@@ -28,7 +28,7 @@ const imagePairs = [
 
 export default function Sliders() {
     return (
-        <div className="grid grid-cols-4 gap-4 ">
+        <div className="lg:grid lg:grid-cols-4 block ">
             {imagePairs.map((pair, index) => (
                 <div key={index} className='slider-item'>
                     <ReactBeforeSliderComponent

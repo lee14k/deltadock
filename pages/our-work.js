@@ -10,29 +10,34 @@ export default function OurTeam () {
         <div>
             <Navbar/>
             <div className=" ">
-                <div className="grid grid-cols-2 mx-6 pb-24">
-                    <div className="flex flex-col justify-center items-start text-left">
-                        <h1 className={`${libre.className} text-4xl lg:text-8xl font-bold`}>Our Work</h1>
-                        <p className="py-10 text-4xl mr-10"> Our work showcases the craftsmanship and
+                <div className="grid lg:grid-cols-2 lg:mx-6 pb-24 my-12">
+                    <div className="flex flex-col justify-center lg:items-start text-center lg:text-left">
+                        <h1 className={`${libre.className} text-6xl lg:text-8xl font-bold`}>Our Work</h1>
+                        <p className="py-10 text-2xl lg:mx-0 mx-6 lg:text-4xl lg:mr-10"> Our work showcases the craftsmanship and
                             attention
                             to detail that defines Delta Dock and Door. Feel free to flip through our gallery to see the impact a
                              garage door can leave on any home.</p>
                         <Link href="/contact">
                             <button
-                                className={`border-2 border-doorange rounded-full hover:bg-white text-white text-3xl font-bold py-2 px-12 bg-doorange hover:text-doorange transition-colors duration-300 ${libre.className} w-full`}>Schedule
+                                className={`border-2 border-doorange rounded-full hover:bg-white text-white text-3xl font-bold py-2 px-12 bg-doorange hover:text-doorange transition-colors duration-300 ${libre.className} w-full invisible lg:visible`}>Schedule
                                 your consultation
                             </button>
                         </Link>
                     </div>
-                    <div>
+                    <div className="flex flex-col justify-center gap-10">
                         <Slideshow/>
-
+                        <Link href="/contact">
+                            <button
+                                className={`border-2 border-doorange rounded-full hover:bg-white text-white text-3xl font-bold py-2 px-12 bg-doorange hover:text-doorange transition-colors duration-300 ${libre.className} w-full lg:invisible visible`}>Schedule
+                                your consultation
+                            </button>
+                        </Link>
                     </div>
 
                 </div>
                 <div className="flex justify-center items-center flex-col">
-                <h1 className={`${libre.className} text-2xl lg:text-8xl font-bold`}>Before & After</h1>
-                    <p className="py-10 text-4xl mx-24 text-center">Explore our before and after photos to see the
+                <h1 className={`${libre.className} text-6xl lg:text-8xl font-bold`}>Before & After</h1>
+                    <p className="py-10 text-2xl lg:mx-0 mx-6 lg:text-4xl lg:mr-10">Explore our before and after photos to see the
                         transformations we’ve brought to homes just like yours. Whether you’re looking for a new
                         installation or you're just looking for a tune-up, we've got you covered.</p>
                     <Link href="/our-services">

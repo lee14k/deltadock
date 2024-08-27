@@ -12,17 +12,20 @@ export default function LoadingDocks () {
         <div className="gradientpaletoblue">
             <Navbar/>
             <div className="grid lg:grid-cols-2 ">
-
+            <span className="lg:hidden block">
+                    <ArchShape imageSrc="/loadingdd.jpg" patternId="dd-loading1"/>
+                </span>
                 <div className="flex flex-col gap-12 justify-center items-center">
                     <h1 className={`${libre.className} text-4xl lg:text-8xl font-bold text-center mx-12`}>
                         Loading Docks
                     </h1>
                     <div className="my-6 mx-12 flex flex-col gap-16 text-2xl">
-                        <div  className="flex gap-12">
+                        <div className="flex gap-12">
                             <CheckIcon className="text-orange-500 text-5xl"/>
-                            <p>We service and install dock levelers, edge of dock (EOD) plates, bumpers, dock seals, and scissor lift docks. </p>
+                            <p>We service and install dock levelers, edge of dock (EOD) plates, bumpers, dock seals, and
+                                scissor lift docks. </p>
                         </div>
-                        <div  className="flex gap-12">
+                        <div className="flex gap-12">
                             <CheckIcon className="text-orange-500 text-5xl"/>
                             <p>Let us get your doors and docks on a preventative maintenance schedule.</p>
                         </div>
@@ -34,7 +37,7 @@ export default function LoadingDocks () {
                         </Link>
                     </div>
                 </div>
-                <div>
+                <div className="hidden lg:block">
                     <ArchShape imageSrc="/loadingdd.jpg" patternId="dd-loading"/>
                 </div>
             </div>
