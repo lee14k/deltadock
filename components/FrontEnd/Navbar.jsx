@@ -33,7 +33,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function Navbar() {
+export default function Navbar({submenuTextColor}) {
   const isMobile = useMediaQuery({ maxWidth: 800 });
   const [activeDropdown, setActiveDropdown] = useState(null);
 
@@ -92,7 +92,7 @@ export default function Navbar() {
                               <div className="py-1">
                                 {item.children.map((subItem) => (
                                   <Link key={subItem.name} href={subItem.href}>
-                                    <span className="block px-4 py-2 text-sm hover:bg-gray-100 text-xl">
+                                    <span className={`block px-4 py-2 text-sm hover:bg-gray-100 text-xl ${submenuTextColor}`}>
                                       {subItem.name}
                                     </span>
                                   </Link>

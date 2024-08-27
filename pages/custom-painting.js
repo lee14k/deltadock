@@ -9,7 +9,7 @@ const libre = Libre_Caslon_Display({ subsets: ["latin"], weight: "400" });
 export default function LoadingDocks () {
     return (
         <div className="gradientbluetoorange text-white">
-                <Navbar/>
+                <Navbar submenuTextColor="text-black"/>
             <div className="grid lg:grid-cols-2 ">
                 <div >
                     <ArchShape imageSrc="/dd-custom-paint-3.jpg" patternId="uniquePatternPaint"/>
