@@ -65,6 +65,7 @@ background: linear-gradient(180deg, rgba(255,250,241,1) 0%, rgba(235,98,0,1) 100
   background-position: center;
   transition: opacity 1s ease-in-out;
   z-index: 1;
+  background-repeat: no-repeat;
 }
 
 .slide.active {

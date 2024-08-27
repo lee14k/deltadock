@@ -25,10 +25,8 @@ export default function ThreeCol() {
   ]
 
   return (
-    <div className="flex flex-col justify-center ourservices py-24">
-      <h1 className={`${libre.className} text-center text-7xl font-bold mb-8 font-bold`}>
-        Our Services
-      </h1>
+    <div className="flex flex-col justify-center ourservices ">
+
       <div className="grid lg:grid-cols-4">
         {groups.map((group, index) => (
             <Link href={links[index]}>

@@ -84,10 +84,12 @@ export default function ContactFill() {
 
         <p className="text-2xl text-gray-900">Questions? Call <a href="tel:+19064281294">906.428.1294</a></p>
         <div className="grid grid-cols-2 mt-12">
-          <button
-              className={`border-2 border-doorange rounded-full hover:bg-white text-white text-l lg:text-xl font-bold py-2 px-12 bg-doorange hover:text-doorange transition-colors duration-300 ${libre.className} w-full`}>
-            Call us today
-          </button>
+          <a href="tel:+19064281294">
+            <button
+                className={`border-2 border-doorange rounded-full hover:bg-white text-white text-l lg:text-xl font-bold py-2 px-12 bg-doorange hover:text-doorange transition-colors duration-300 ${libre.className} w-full`}>
+              Call us today
+            </button>
+          </a>
         </div>
       </div>
 

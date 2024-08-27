@@ -13,8 +13,6 @@ export default function OurTeam () {
                 <p className="py-10 text-4xl mx-24 text-center">Click to learn more about our crew</p>
             </div>
                 <HeadshotCircle/>
-
-
             <Footer/>
         </div>
     )

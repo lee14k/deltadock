@@ -8,6 +8,7 @@ const images = [
     './dd_doors2.jpeg',
     './dd_doors3.jpeg',
     './dd_doors4.jpeg',
+    './dd-custom-paint-3.jpg'
     // add more URLs as needed
 ];
 
@@ -44,7 +45,7 @@ function Homeslider() {
             <button className="arrow left-arrow" onClick={goToPrevSlide}>
                 <ArrowBackIosIcon sx={{ fontSize: 50 }} />
             </button>
-            <div className="w-[18rem] h-[15rem] lg:w-[90rem] lg:h-[65rem] flex relative justify-center items-center  ">
+            <div className="w-[18rem] h-[15rem] lg:w-[50rem] lg:h-[30rem] flex relative justify-center items-center  ">
 
                 {images.map((image, index) => (
                     <div
