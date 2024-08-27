@@ -4,33 +4,40 @@ import Link from "next/link";
 const libre = Libre_Caslon_Display({ subsets: ["latin"], weight: "400" });
 
 export default function ThreeCol() {
-  const groups = [1, 2, 3, 4]; // Array to map over, adjust as needed
+  const groups = [1, 2, 3]; // Array to map over, adjust as needed
   const images = [
-    "/installdd.jpg",
-    "/installdd.jpg",
-    "/installdd.jpg",
-    "/installdd.jpg",
+    "/dd_doors4.jpeg",
+    "/dd_openers.jpg",
+    "/dd-custom-paint-3.jpg",
+
   ];
   const headings = [
     "Maintenance & Installation",
     "Openers",
     "Custom Painting",
-    "Commercial Doors",
+
   ];
   const links =[
       "/overhead-garage-doors",
       "/openers",
       "/custom-painting",
-      "/commercial-doors",
+
   ]
 
+    const groupsTwo=[4,5]
+    const headingsTwo=[    "Commercial Doors",
+        "Loading Docks"]
+    const linksTwo=[      "/commercial-doors",
+        "/loading-docks",]
+const shoes=[    "/installdd.jpg",
+    "/loadingdd.jpg"]
   return (
     <div className="flex flex-col justify-center ourservices ">
 
-      <div className="grid lg:grid-cols-4">
+      <div className="grid lg:grid-cols-3 ">
         {groups.map((group, index) => (
             <Link href={links[index]}>
-          <div key={index} className="relative flex flex-col items-center" style={{ width: "100%", maxWidth: "650px", height: "550px" }}>
+          <div key={index} className="relative flex flex-col justify-center items-center" style={{ width: "100%", maxWidth: "650px", height: "550px" }}>
             <svg
               width="100%"
               height="100%"
@@ -50,7 +57,7 @@ export default function ThreeCol() {
               className="flex flex-col justify-center items-center"
               style={{
                 zIndex: 1,
-                width: '60%',
+                width: '90%',
                 height: '100%',
                 position: 'relative',
                 top: '0px',
@@ -63,10 +70,52 @@ export default function ThreeCol() {
                 <h4 className={`font-bold ${libre.className} text-4xl font-bold`}>{headings[index]}</h4>
               </div>
             </div>
+
           </div>
             </Link>
         ))}
       </div>
+        <div className="grid grid-cols-1 lg:flex lg:flex-shrink-0 lg:justify-center lg:items-center">
+            {groupsTwo.map((group, index) => (
+                <Link href={linksTwo[index]}>
+                    <div key={index} className="relative flex flex-col justify-center items-center flex-shrink-0 max-w-[400px] lg:min-w-[550px]" style={{ width: "100%", height: "550px" }}>
+                        <svg
+                            width="100%"
+                            height="100%"
+                            viewBox="0 0 750 650"
+                            xmlns="http://www.w3.org/2000/svg"
+                            className="absolute"
+                            style={{ top: '0px', left: '50%', transform: 'translateX(-50%)', zIndex: 0 }}
+                        >
+                            <defs>
+                                <pattern id={`shoes${index}`} patternUnits="userSpaceOnUse" width="100%" height="100%">
+                                    <image href={shoes[index]} x="0" y="0" width="100%" height="110%" />
+                                </pattern>
+                            </defs>
+                            <polygon points="75,200 350,30 625,200 625,550 75,550" fill={`url(#shoes${index})`} stroke="#eb6200" strokeWidth="3" />
+                        </svg>
+                        <div
+                            className="flex flex-col justify-center items-center w-full"
+                            style={{
+                                zIndex: 1,
+                                width: '50%',
+                                height: '100%',
+                                position: 'relative',
+                                top: '0px',
+                                right: '15px',
+                                padding: '0px',
+                                boxSizing: 'border-box',
+                            }}
+                        >
+                            <div className="text-center mt-4 text-white p-4 rounded bg-black bg-opacity-50">
+                                <h4 className={`font-bold ${libre.className} text-4xl font-bold`}>{headingsTwo[index]}</h4>
+                            </div>
+                        </div>
+
+                    </div>
+                </Link>
+            ))}
+        </div>
     </div>
   );
 }

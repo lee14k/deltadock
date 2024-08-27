@@ -20,7 +20,7 @@ export default function OurTeam () {
                             door can leave on any home.</p>
                         <Link href="/contact">
                             <button
-                                className={`border-2 border-doorange rounded-full hover:bg-white text-white text-l lg:text-xl font-bold py-2 px-12 bg-doorange hover:text-doorange transition-colors duration-300 ${libre.className} w-full`}>Schedule
+                                className={`border-2 border-doorange rounded-full hover:bg-white text-white text-3xl font-bold py-2 px-12 bg-doorange hover:text-doorange transition-colors duration-300 ${libre.className} w-full`}>Schedule
                                 your consultation
                             </button>
                         </Link>
@@ -38,7 +38,7 @@ export default function OurTeam () {
                         installation or you're just looking for a tune-up, our work speaks for itself.</p>
                     <Link href="/our-services">
                         <button
-                            className={`border-2 border-doorange rounded-full hover:bg-white text-white text-l lg:text-xl font-bold py-2 px-4 bg-doorange hover:text-doorange transition-colors duration-300 ${libre.className} w-full`}>Learn
+                            className={`border-2 border-doorange rounded-full hover:bg-white text-white text-3xl font-bold py-2 px-4 bg-doorange hover:text-doorange transition-colors duration-300 ${libre.className} w-full`}>Learn
                             more about our services
                         </button>
                     </Link>

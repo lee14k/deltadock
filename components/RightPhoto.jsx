@@ -14,7 +14,8 @@ Don't just take our word for it!        </h1>
         <GoogleReviews />
       </div>
       <div className="grid grid-cols-1 ">
-          <ArchShape imageSrc="/dd_doors4.jpeg" patternId="uniquePattern1" />
+          <ArchShape imageSrc="/dd_door_review.jpg" width={800}
+                     height={600} />
           <div className="pl-12">
               <Link href="/our-team">
                   <button

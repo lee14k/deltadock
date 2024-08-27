@@ -1,40 +1,36 @@
 import React from 'react';
 
-const ArchShape = ({ imageSrc, patternId }) => (
-    <div className="w-full">
+const ArchShape = ({ imageSrc, width = 800, height = 600 }) => (
+    <div style={{ width, height }}>
         <svg
             xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 3000 3000"
-            className="w-full h-auto"
+            viewBox={`0 0 ${width} ${height}`}
+            width={width}
+            height={height}
         >
             <defs>
-                <pattern
-                    id={patternId}
-                    patternUnits="objectBoundingBox"
-                    patternContentUnits="objectBoundingBox"
-                    width="1"
-                    height="1"
-                >
-                    <image
-                        href={imageSrc}
-                        preserveAspectRatio="xMidYMid slice"
-                        width="1"
-                        height="1"
-                        x="0"
-                        y="0"
+                <mask id="archMask">
+                    <path
+                        fill="white"
+                        d={`M 0 ${height} L ${width} ${height} L ${width} ${height / 2} A ${width / 2} ${height / 2} 0 0 0 0 ${height / 2} Z`}
                     />
-                </pattern>
+                </mask>
             </defs>
-            <g>
-                <path
-                    fill={`url(#${patternId})`}
-                    d="M 300 2700 L 2700 2700 L 2700 1650 A 1200 1200 0 0 0 300 1650 Z"
-                    fillOpacity="1"
-                    fillRule="nonzero"
-                    stroke="#000000"
-                    strokeWidth="15"
-                />
-            </g>
+
+            <image
+                href={imageSrc}
+                width="100%"
+                height="100%"
+                preserveAspectRatio="xMidYMid slice"
+                mask="url(#archMask)"
+            />
+
+            <path
+                d={`M 0 ${height} L ${width} ${height} L ${width} ${height / 2} A ${width / 2} ${height / 2} 0 0 0 0 ${height / 2} Z`}
+                fill="none"
+                stroke="black"
+                strokeWidth="2"
+            />
         </svg>
     </div>
 );

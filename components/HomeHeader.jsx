@@ -8,7 +8,8 @@ export default function HomeHeader() {
   return (
     <div className="lg:grid lg:grid-cols-2 homeheaderbg pb-24 gap-24">
       <div className="">
-          <ArchShape imageSrc="/dd_homepg.jpg" patternId="uniquePattern2" />
+          <ArchShape imageSrc="/dd_homepg.jpg"   width={800}
+                     height={600} />
 
       </div>
 
