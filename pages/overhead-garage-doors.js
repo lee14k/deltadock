@@ -37,7 +37,7 @@ export default function OverheadGarageDoors () {
                     <Link href="/contact">
                         <button
                             className={`border-2 border-blue-900 rounded-full hover:bg-white text-white text-4xl  font-bold py-2 px-12 bg-blue-900  hover:text-blue-900  transition-colors duration-300 ${libre.className} w-full mb-6`}>
-                            Call to get your consultation today!
+                            Call to schedule your estimate!
                         </button>
                     </Link>
                 </div>

@@ -22,17 +22,18 @@ export default function LoadingDocks () {
                     <div className="my-6 mx-12 flex flex-col gap-16 text-2xl">
                         <div className="flex gap-12">
                             <CheckIcon className="text-orange-500 text-5xl"/>
-                            <p>We service and install dock levelers, edge of dock (EOD) plates, bumpers, dock seals, and
+                            <p>We service, repair and install dock levelers, truck restraints, edge of dock (EOD) plates, bumpers, dock seals, and
                                 scissor lift docks. </p>
                         </div>
                         <div className="flex gap-12">
                             <CheckIcon className="text-orange-500 text-5xl"/>
-                            <p>Let us get your doors and docks on a preventative maintenance schedule.</p>
+                            <p>Let's get your doors and docks on a preventative maintenance schedule. Schedule an estimate today!</p>
                         </div>
+
                         <Link href="/contact">
                             <button
                                 className={`border-2 border-blue-900 rounded-full hover:bg-white text-white text-4xl  font-bold py-2 px-12 bg-blue-900  hover:text-blue-900  transition-colors duration-300 ${libre.className} w-full`}>
-                                Get your dock on a maintenance schedule today!
+                                Call to schedule your estimate!
                             </button>
                         </Link>
                     </div>

@@ -4,8 +4,9 @@ import 'react-before-after-slider-component/dist/build.css';
 
 const imagePairs = [
     {
-        firstImage: { imageUrl: '/dd_custom_paint_1-min.jpg' },
-        secondImage: { imageUrl: '/dd-custom-paint-2-min.jpg' }
+        firstImage: { imageUrl:'/dd-custom-paint-2-min.jpg'  },
+        secondImage: { imageUrl: '/dd_custom_paint_1-min.jpg' }
+
     },
     {
         firstImage: { imageUrl: '/dd_before8.jpeg' },

@@ -8,8 +8,12 @@ const images = [
     './dd_doors2.jpeg',
     './dd_doors3.jpeg',
     './dd_doors4.jpeg',
-    './dd-custom-paint-3.jpg'
-    // add more URLs as needed
+    './dd-custom-paint-3.jpg',
+    './dd_new_slide1.jpg',
+    './dd_new_slide2.jpg',
+    './dd_new_slide3.jpg',
+    './dd_new_slide4.jpg',
+    './dd_new_slide5.jpg',
 ];
 
 function Homeslider() {

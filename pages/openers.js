@@ -32,12 +32,31 @@ export default function Openers () {
                         </div>
                         <div className="flex gap-12">
                             <CheckIcon className="text-blue-900 text-5xl"/>
+                            <p>
+                                Jack Shaft/Side Mount Openers
+                                Commercial Trolley and Hoist Operators
+                            </p>
+                        </div>
+                        <div className="flex gap-12">
+                            <CheckIcon className="text-blue-900 text-5xl"/>
                             <p>Side mount and jack shaft openers for high-lifted or full vertical lift doors.</p>
                         </div>
+                        <div className="flex gap-12">
+                            <CheckIcon className="text-blue-900 text-5xl"/>
+                            <p> Dealers of LiftMaster and Manaras openers.
+                            </p>
+                        </div>
+                        <div className="flex gap-12">
+                            <CheckIcon className="text-blue-900 text-5xl"/>
+                            <p> We can program MOST car and truck buttons for your remotes or keypads.
+                            </p>
+                        </div>
+
+
                         <Link href="/contact">
                             <button
                                 className={`border-2 border-blue-900 rounded-full hover:bg-white text-white text-4xl  font-bold py-2 px-12 bg-blue-900  hover:text-blue-900  transition-colors duration-300 ${libre.className} w-full`}>
-                                Call to get your consultation today!
+                                Call to schedule your estimate!
                             </button>
                         </Link>
                     </div>

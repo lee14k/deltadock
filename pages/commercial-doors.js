@@ -38,7 +38,7 @@ export default function CommercialDoors() {
                         </div>
                         <button
                             className={`border-2 border-doorange rounded-full hover:bg-white text-white text-4xl font-bold py-2 px-12 bg-doorange hover:text-doorange transition-colors duration-300 ${libre.className} w-full mb-6`}>
-                            Call Katrina for your custom consultation!
+                            Call to schedule your estimate!
                         </button>
                     </div>
                 </div>
