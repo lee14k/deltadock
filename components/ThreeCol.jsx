@@ -37,7 +37,7 @@ const shoes=[    "/dd-commercial.jpeg",
       <div className="grid lg:grid-cols-3 ">
         {groups.map((group, index) => (
             <Link href={links[index]}>
-          <div key={index} className="relative flex flex-col justify-center items-center" style={{ width: "100%", maxWidth: "650px", height: "550px" }}>
+          <div key={index} className="relative flex flex-col justify-center items-center" style={{ width: "100%", maxWidth: "650px", height: "450px" }}>
             <svg
               width="100%"
               height="100%"
@@ -78,7 +78,7 @@ const shoes=[    "/dd-commercial.jpeg",
         <div className="grid grid-cols-1 lg:flex lg:flex-shrink-0 lg:justify-center lg:items-center">
             {groupsTwo.map((group, index) => (
                 <Link href={linksTwo[index]}>
-                    <div key={index} className="relative flex flex-col justify-center items-center flex-shrink-0 max-w-[400px] lg:min-w-[550px]" style={{ width: "100%", height: "550px" }}>
+                    <div key={index} className="relative flex flex-col justify-center items-center flex-shrink-0 max-w-[650px] lg:min-w-[550px]" style={{ width: "100%", height: "450px" }}>
                         <svg
                             width="100%"
                             height="100%"
