@@ -11,7 +11,7 @@ export default function OurTeam () {
             <Navbar/>
             <div className=" ">
                 <div className="grid lg:grid-cols-2 lg:mx-6 pb-24 my-12">
-                    <div className="flex flex-col justify-center lg:items-start text-center lg:text-left">
+                    <div className="flex flex-col justify-center items-center lg:items-start text-center lg:text-left">
                         <h1 className={`${libre.className} text-6xl lg:text-8xl font-bold`}>Our Work</h1>
                         <p className="py-10 text-2xl lg:mx-0 mx-6 lg:text-4xl lg:mr-10"> Our work showcases the craftsmanship and
                             attention
@@ -24,7 +24,7 @@ export default function OurTeam () {
                             </button>
                         </Link>
                     </div>
-                    <div className="flex flex-col justify-center gap-10">
+                    <div className="flex flex-col justify-center items-center gap-10">
                         <Slideshow/>
                         <Link href="/contact">
                             <button
