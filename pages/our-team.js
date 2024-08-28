@@ -11,7 +11,7 @@ export default function OurTeam () {
             <Navbar/>
             <div className="flex flex-col justify-center items-center">
                 <h1 className={`${libre.className} text-6xl lg:text-8xl font-bold py-8 mb-10`} >Our Team</h1>
-                <p className="lg:text-4xl lg:mx-24 text-center invisible lg:visible">Click each photo to get to know our Delta Dock and Door family!</p>
+                <p className="lg:text-4xl lg:mx-24 text-center invisible lg:visible">Click each photo to get to know our Delta Door & Dock family!</p>
             </div>
             <div className="py-6">
                 <HeadshotCircle/>
