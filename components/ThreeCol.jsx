@@ -57,7 +57,7 @@ const shoes=[    "/dd-commercial.jpeg",
               className="flex flex-col justify-center items-center"
               style={{
                 zIndex: 1,
-                width: '90%',
+                width: '100%',
                 height: '100%',
                 position: 'relative',
                 top: '0px',
@@ -66,8 +66,8 @@ const shoes=[    "/dd-commercial.jpeg",
                 boxSizing: 'border-box',
               }}
             >
-              <div className="text-center mt-4 text-white p-4 rounded bg-black bg-opacity-50">
-                <h4 className={`font-bold ${libre.className} text-4xl font-bold`}>{headings[index]}</h4>
+              <div className="text-center mt-4 text-white lg:p-4 rounded bg-black bg-opacity-50 mx-24 lg:mx-0">
+                <h4 className={`font-bold ${libre.className}  text-4xl font-bold`}>{headings[index]}</h4>
               </div>
             </div>
 
@@ -88,8 +88,8 @@ const shoes=[    "/dd-commercial.jpeg",
                             style={{ top: '0px', left: '50%', transform: 'translateX(-50%)', zIndex: 0 }}
                         >
                             <defs>
-                                <pattern id={`shoes${index}`} patternUnits="userSpaceOnUse" width="100%" height="100%">
-                                    <image href={shoes[index]} x="0" y="0" width="100%" height="110%" />
+                                <pattern id={`shoes${index}`} patternUnits="userSpaceOnUse" width="120%" height="100%">
+                                    <image href={shoes[index]} x="-100" y="0" width="120%" height="110%" />
                                 </pattern>
                             </defs>
                             <polygon points="75,200 350,30 625,200 625,550 75,550" fill={`url(#shoes${index})`} stroke="#eb6200" strokeWidth="3" />
@@ -98,7 +98,7 @@ const shoes=[    "/dd-commercial.jpeg",
                             className="flex flex-col justify-center items-center w-full"
                             style={{
                                 zIndex: 1,
-                                width: '50%',
+                                width: '100%',
                                 height: '100%',
                                 position: 'relative',
                                 top: '0px',

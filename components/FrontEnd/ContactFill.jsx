@@ -55,9 +55,9 @@ export default function ContactFill() {
   };
 
   return (
-    <div className="isolate px-6 sm:py-32 grid lg:grid-cols-2 customcontact">
-      <div className="mx-auto px-16 flex flex-col justify-between bg-white pb-12  text-left">
-        <h2 className={`text-6xl font-bold tracking-tight text-gray-900 sm:text-7xl py-10 ${libre.className}`}>
+    <div className="isolate px-12 sm:py-32 grid lg:grid-cols-2 customcontact">
+      <div className="mx-auto px-16 flex flex-col justify-center lg:justify-between bg-white pb-12  text-left">
+        <h2 className={`px-16 text-6xl font-bold tracking-tight text-gray-900 sm:text-7xl py-10 ${libre.className}`}>
           Contact Us
         </h2>
         <div className="flex flex-col my-2">
@@ -70,35 +70,39 @@ export default function ContactFill() {
           <h3 className={`text-4xl font-bold tracking-tight text-gray-900  ${libre.className} font-bold`}>Phone</h3>
           <span>Office: 906.428.1294 </span>
           <span>Cory: 906.399.0126 (cell)</span>
-          <span>Katrina: 906.399.0891 (cell) - Billing and Custom Painting</span>
+          <span>Katrina: 906.399.0891 (cell) </span><span className="text-s">(Billing and Custom Painting)</span>
         </div>
         <div className="flex flex-col my-2">
           <h3 className={`text-4xl font-bold tracking-tight text-gray-900  ${libre.className} font-bold`}>Email</h3>
           <span><a href="mailto:deltadockequipment@gmail.com">deltadockequipment@gmail.com</a></span>
         </div>
         <div className="flex gap-4">
-          <h4 className={`text-4xl font-bold tracking-tight text-gray-900  ${libre.className} font-bold `}>Find us on
+          <h4 className={`text-3xl lg:text-4xl font-bold tracking-tight text-gray-900  ${libre.className} font-bold `}>Find us on
             Facebook!</h4>
-          <Link href='https://www.facebook.com/profile.php?id=100084725174383'>
-            <FacebookTwoToneIcon fontSize="large"/>
-          </Link>
+          <a target="_blank" href='https://www.facebook.com/profile.php?id=100084725174383'>
+            <span className="text-doorange">            <FacebookTwoToneIcon fontSize="large"/>
+</span>
+          </a>
         </div>
 
-        <p className={`text-2xl text-gray-900 ${libre.className}`}>Questions? Call <a href="tel:+19064281294">906.428.1294</a></p>
-        <div className="grid grid-cols-2 mt-12">
+        <p className={`text-3xl lg:text-4xl text-gray-900 ${libre.className}`}>Questions? Call <a
+            href="tel:+19064281294">906.428.1294</a></p>
+        <div className="grid grid-cols-2 mt-12 ">
           <a href="tel:+19064281294">
             <button
                 className={`border-2 border-doorange rounded-full hover:bg-white text-white text-l lg:text-xl font-bold py-2 px-12 bg-doorange hover:text-doorange transition-colors duration-300 ${libre.className} w-full`}>
               Call us today
             </button>
           </a>
+
         </div>
       </div>
 
       <form method="POST" className="mx-auto bg-white " onSubmit={handleSubmit}>
         <div className="px-16 grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2 pt-10 ">
           <div className="">
-            <label htmlFor="firstName" className={`text-xl font-bold leading-6   ${libre.className} font-bold `}>First name</label>
+            <label htmlFor="firstName" className={`text-xl font-bold leading-6   ${libre.className} font-bold `}>First
+              name</label>
             <input type="text" name="firstName" id="firstName" autoComplete="given-name"
               className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
           </div>
@@ -142,7 +146,7 @@ export default function ContactFill() {
         <div className="mt-10">
           <div className="mt-10 flex justify-center">
             <button type="submit"
-                    className={`border-2 border-doorange rounded-full hover:bg-white text-white text-l lg:text-xl font-bold py-2 px-4 bg-doorange hover:text-doorange transition-colors duration-300 ${libre.className} w-3/5`}>
+                    className={`border-2 border-doorange rounded-full hover:bg-white text-white text-xl font-bold py-2 px-4 bg-doorange hover:text-doorange transition-colors duration-300 ${libre.className} w-3/5 lg:mt-16 mb-6`}>
               Let's talk
             </button>
           </div>

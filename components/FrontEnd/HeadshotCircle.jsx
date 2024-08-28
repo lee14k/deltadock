@@ -72,11 +72,11 @@ function HeadshotCircle(props) {
 
             {/* Modal */}
             {activePerson && (
-                <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-                    <div className="bg-white p-4 rounded-lg shadow-lg w-1/2">
+                <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50  ">
+                    <div className="bg-white p-4 rounded-lg shadow-lg lg:w-1/4  ">
                         <h2 className={`text-4xl font-bold tracking-tight text-gray-900  ${libre.className} font-bold`}>{activePerson.personTitle}</h2>
-                        <p>{activePerson.bio}</p>
-                        <button onClick={closeModal} className={`border-2 border-doorange rounded-full hover:bg-white text-white text-l lg:text-xl font-bold py-2 px-12 bg-doorange hover:text-doorange transition-colors duration-300 ${libre.className} w-2/4 flex justify-center items-center`} >Close</button>
+                        <p className="text-xl my-4">{activePerson.bio}</p>
+                        <button onClick={closeModal} className={`border-2 border-doorange rounded-full hover:bg-white text-white text-l lg:text-xl font-bold py-2 px-12 bg-doorange hover:text-doorange transition-colors duration-300 ${libre.className} w-2/4 flex justify-center items-center  my-2"`} >Close</button>
                     </div>
                 </div>
             )}
