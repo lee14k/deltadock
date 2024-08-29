@@ -36,18 +36,21 @@ export default function CommercialDoors() {
                                 </p>
                             </div>
                         </div>
-                        <button
-                            className={`border-2 border-doorange rounded-full hover:bg-white text-white text-4xl font-bold py-2 px-12 bg-doorange hover:text-doorange transition-colors duration-300 ${libre.className} w-full mb-6`}>
-                            Call to schedule your estimate!
-                        </button>
+                        <Link href="/contact">
+                            <button
+                                className={`border-2 border-doorange rounded-full hover:bg-white text-white text-4xl font-bold py-2 px-12 bg-doorange hover:text-doorange transition-colors duration-300 ${libre.className} w-full mb-6`}>
+                                Call to schedule your estimate!
+                            </button>
+                        </Link>
+
                     </div>
                 </div>
 
                 <div className="hidden lg:block">
-                    <ArchShape imageSrc="dd-commercial.jpeg" patternId="dd-commercial-2" />
+                    <ArchShape imageSrc="dd-commercial.jpeg" patternId="dd-commercial-2"/>
                 </div>
             </div>
-            <Footer />
+            <Footer/>
         </div>
     );
 }
