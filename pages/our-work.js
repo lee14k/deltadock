@@ -10,13 +10,13 @@ export default function OurTeam () {
         <div>
             <Navbar/>
             <div className=" ">
-                <div className="grid lg:grid-cols-2 lg:mx-6 pb-24 my-12">
+                <div className="grid lg:grid-cols-2 lg:mx-6 pb-24 my-12 lg:gap-36">
                     <div className="flex flex-col justify-center items-center lg:items-start text-center lg:text-left">
                         <h1 className={`${libre.className} text-6xl lg:text-8xl font-bold`}>Our Work</h1>
                         <p className="py-10 text-2xl lg:mx-0 mx-6 lg:text-4xl lg:mr-10"> Our work showcases the craftsmanship and
                             attention
                             to detail that defines Delta Dock and Door. Feel free to flip through our gallery to see the impact a
-                             garage door can leave on any home.</p>
+                             garage door can leave on any home or business.</p>
                         <Link href="/contact">
                             <button
                                 className={`border-2 border-doorange rounded-full hover:bg-white text-white text-3xl font-bold py-2 px-12 bg-doorange hover:text-doorange transition-colors duration-300 ${libre.className} w-full invisible lg:visible`}>Schedule

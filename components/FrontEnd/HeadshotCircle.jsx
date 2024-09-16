@@ -23,7 +23,7 @@ function HeadshotCircle(props) {
 
     const headshots = [
         {
-            firstImage: '/3973-Katrina-Nature.jpg',
+            firstImage: '/7953-Katrina-Sitting.png',
             personTitle: 'Katrina',
             bio: "I was born and raised in Delta County.  I worked a few waitressing jobs after high school but ultimately started a career at Sherwin Williams paint store in Escanaba in 2004.  After working my way up through part-time positions to assistant manager to manager and after many discussions with Cory, I finally made the leap to prioritize our family and our new business; I “retired” in February of 2024 from Sherwin Williams and now work full time for Delta Door & Dock. I still use my knowledge of paints and colors by custom painting overhead garage doors in the summertime."
 },

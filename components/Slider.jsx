@@ -4,29 +4,45 @@ import 'react-before-after-slider-component/dist/build.css';
 
 const imagePairs = [
     {
-        firstImage: { imageUrl:'/dd-custom-paint-2-min.jpg'  },
-        secondImage: { imageUrl: '/dd_custom_paint_1-min.jpg' }
+        secondImage: { imageUrl:'/dd-custom-paint-2-min.jpg'  },
+        firstImage: { imageUrl: '/dd_custom_paint_1-min.jpg' }
 
     },
     {
-        firstImage: { imageUrl: '/dd_before8.jpeg' },
-        secondImage: { imageUrl: '/dd_after8.jpeg' }
+        secondImage: { imageUrl: '/dd_before8.jpeg' },
+        firstImage: { imageUrl: '/dd_after8.jpeg' }
     },
     {
-        firstImage: { imageUrl: '/dd_before1.jpeg' },
-        secondImage: { imageUrl: '/dd_after1.jpeg' }
+        secondImage: { imageUrl: '/dd_before1.jpeg' },
+        firstImage: { imageUrl: '/dd_after1.jpeg' }
     },
     {
-        firstImage: { imageUrl: '/dd_before7.jpeg' },
-        secondImage: { imageUrl: '/dd_after7.jpeg' }
+        secondImage: { imageUrl: '/dd_before7.jpeg' },
+        firstImage: { imageUrl: '/dd_after7.jpeg' }
     },
     {
-        firstImage: { imageUrl: '/dd_before5.jpeg' },
-        secondImage: { imageUrl: '/dd_after5.jpeg' }
+        secondImage: { imageUrl: '/dd_before5.jpeg' },
+        firstImage: { imageUrl: '/dd_after5.jpeg' }
     },
     {
-        firstImage:{ imageUrl: '/dd-new-before.jpg' },
-        secondImage: { imageUrl: '/dd-new-after.jpg' }
+        secondImage:{ imageUrl: '/dd-new-before.jpg' },
+        firstImage: { imageUrl: '/dd-new-after.jpg' }
+    },
+    {
+        secondImage:{ imageUrl: '/before-dd-11.jpeg' },
+        firstImage: { imageUrl: '/after-dd-11.jpeg' }
+    },
+    {
+        secondImage:{ imageUrl: '/before-dd-10.jpeg' },
+        firstImage: { imageUrl: '/after-dd-10.jpeg' }
+    },
+    {
+        secondImage:{ imageUrl: '/before-dd-12.jpeg' },
+        firstImage: { imageUrl: '/after-dd-12.jpeg' }
+    },
+    {
+        secondImage:{ imageUrl: '/before-dd-13.jpeg' },
+        firstImage: { imageUrl: '/after-dd-13.jpeg' }
     }
 
 ];

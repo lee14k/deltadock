@@ -10,7 +10,7 @@ export default function ThreeColIcon() {
 
   const headings = ["Quality Doors", "Professional Service", "Locally Founded"];
   const descriptions = [
-    "Dealers of Haas Door, American Overhead Doors, C.H.I Overhead Doors, Lift Master, and Manaras Openers.",
+    "Dealers of Haas Door, American Overhead Door, C.H.I, Lift Master, and Manaras Openers.",
     "We have 3 full-time skilled service technicians",
     "Formerly known as Delta Door Co., founded in 1977, we re-branded as Delta Door & Dock in October 2022 when we purchased the company.",
   ];
@@ -24,7 +24,7 @@ export default function ThreeColIcon() {
           <div key={index} className="text-center">
             <img src={icon} alt={`Icon ${index + 1}`} className="mx-auto mb-4" />
             <h4 className={`${libre.className} text-5xl font-bold mb-2`}>{headings[index]}</h4>
-            <p className={`text-2xl mx-16 text-center`}>{descriptions[index]}</p>
+            <p className={`text-2xl lg:mx-0 mx-16 text-center`}>{descriptions[index]}</p>
           </div>
         ))}
       </div>

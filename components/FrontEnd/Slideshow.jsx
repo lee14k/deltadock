@@ -14,7 +14,14 @@ const images = [
     './dd_new_slide3.jpg',
     './dd_new_slide4.jpg',
     './dd_new_slide5.jpg',
-    './dd-new-after.jpg'
+    './dd-new-after.jpg',
+    'new-slide-dd-2.jpeg',
+    'newslide-1-dd.jpeg',
+    'newslide-dd-3.jpeg',
+    'newslide-dd-4.jpeg',
+    'newslide-dd-5.jpeg',
+    'newslide-dd-6.jpeg',
+    'newslide-dd-7.jpeg'
 ];
 
 function Homeslider() {
