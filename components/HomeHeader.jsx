@@ -13,8 +13,12 @@ export default function HomeHeader() {
       </div>
 
       <div className="flex flex-col gap-12">
-          <div className="logo-box-home-header lg:px-56 lg:py-56 lg:h-[29rem] h-80">
-
+          <div className="">
+<Image
+src="/logo-dd.png"
+width={600}
+height={600}
+/>
           </div>
 
         <div className="lg:ml-0 my-4 lg:grid lg:grid-cols-1 flex flex-col justify-center items-center">  <h1 className={`${libre.className} lg:text-left text-center font-bold text-6xl lg:text-8xl text-bold text-blue-900`}>Quality Doors, Professional Service</h1>
