@@ -55,9 +55,9 @@ export default function ContactFill() {
   };
 
   return (
-    <div className="isolate px-12 sm:py-32 grid lg:grid-cols-2 customcontact">
-      <div className="mx-auto px-16 flex flex-col justify-center lg:justify-between bg-white pb-12  text-left">
-        <h2 className={`px-16 text-6xl font-bold tracking-tight text-gray-900 sm:text-7xl py-10 ${libre.className}`}>
+    <div className="isolate px-12 items-center grid lg:grid-cols-2 customcontact">
+      <div className="mx-auto lg:text-left text-center lg:px-16 flex flex-col justify-center lg:justify-between bg-white pb-12  text-left">
+        <h2 className={`lg:px-16 text-6xl font-bold tracking-tight text-gray-900 sm:text-7xl py-10 text-center ${libre.className}`}>
           Contact Us
         </h2>
         <div className="flex flex-col my-2">
