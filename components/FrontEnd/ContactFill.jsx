@@ -55,8 +55,8 @@ export default function ContactFill() {
   };
 
   return (
-    <div className="isolate px-12 items-center grid lg:grid-cols-2 customcontact">
-      <div className="mx-auto lg:text-left text-center lg:px-16 flex flex-col justify-center lg:justify-between bg-white pb-12  text-left">
+    <div className="isolate px-12 items-center grid lg:grid-cols-2 customcontact justify-center lg:bg-custom-contact">
+      <div className="mx-auto lg:text-left text-center  lg:px-16 flex flex-col justify-center lg:justify-between bg-white pb-12  text-left">
         <h2 className={`lg:px-16 text-6xl font-bold tracking-tight text-gray-900 sm:text-7xl py-10 text-center ${libre.className}`}>
           Contact Us
         </h2>
@@ -87,7 +87,7 @@ export default function ContactFill() {
 
         <p className={`text-3xl lg:text-4xl text-gray-900 ${libre.className}`}>Questions? Call <a
             href="tel:+19064281294">906.428.1294</a></p>
-        <div className="grid grid-cols-2 mt-12 ">
+        <div className="grid mt-12 ">
           <a href="tel:+19064281294">
             <button
                 className={`border-2 border-doorange rounded-full hover:bg-white text-white text-l lg:text-xl font-bold py-2 px-12 bg-doorange hover:text-doorange transition-colors duration-300 ${libre.className} w-full`}>
