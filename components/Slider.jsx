@@ -41,9 +41,22 @@ const imagePairs = [
         firstImage: { imageUrl: '/after-dd-12.jpeg' }
     },
     {
-        secondImage:{ imageUrl: '/before-dd-13.jpeg' },
-        firstImage: { imageUrl: '/after-dd-13.jpeg' }
-    }
+        secondImage: {imageUrl: '/before-dd-13.jpeg'},
+        firstImage: {imageUrl: '/after-dd-13.jpeg'}
+    },
+    {
+        secondImage:{ imageUrl: '/before-14.jpeg' },
+        firstImage: { imageUrl: '/after-15.jpeg' }
+    },
+    {
+        secondImage:{ imageUrl: '/before-16.jpeg' },
+        firstImage: { imageUrl: '/after-16.jpeg' }
+    },
+    {
+        secondImage:{ imageUrl: '/before-17.jpeg' },
+        firstImage: { imageUrl: '/after-17.jpeg' }
+    },
+
 
 ];
 

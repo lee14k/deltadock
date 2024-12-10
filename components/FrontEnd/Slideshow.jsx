@@ -21,7 +21,8 @@ const images = [
     'newslide-dd-4.jpeg',
     'newslide-dd-5.jpeg',
     'newslide-dd-6.jpeg',
-    'newslide-dd-7.jpeg'
+    'newslide-dd-7.jpeg',
+    'rolling-door.jpeg',
 ];
 
 function Homeslider() {

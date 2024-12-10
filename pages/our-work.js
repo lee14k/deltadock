@@ -46,7 +46,7 @@ export default function OurTeam () {
                             more about our services
                         </button>
                     </Link>
-                    <div className="my-10">
+                    <div className="my-10 ">
                         <Slider/>
                     </div>
                 </div>
