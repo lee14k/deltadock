@@ -55,7 +55,7 @@ export default function ContactFill() {
   };
 
   return (
-    <div className="isolate px-12 items-center grid lg:grid-cols-2 customcontact justify-center lg:bg-custom-contact">
+    <div className="isolate px-12 py-16 items-center grid lg:grid-cols-2 customcontact justify-center lg:bg-custom-contact">
       <div className="mx-auto lg:text-left text-center  lg:px-16 flex flex-col justify-center lg:justify-between bg-white pb-12  text-left">
         <h2 className={`lg:px-16 text-6xl font-bold tracking-tight text-gray-900 sm:text-7xl py-10 text-center ${libre.className}`}>
           Contact Us
@@ -131,10 +131,10 @@ export default function ContactFill() {
             <Switch.Group as="div" className="flex gap-x-4">
               <Switch checked={agreed} onChange={setAgreed}
                 className={classNames(agreed ? "bg-indigo-600" : "bg-gray-200",
-                  "flex w-8 flex-none cursor-pointer rounded-full p-px ring-1 ring-inset ring-gray-900/5 transition-colors duration-200 ease-in-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600")}>
+                  "relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-offset-2")}>
                 <span className="sr-only">Agree to policies</span>
-                <span aria-hidden="true" className={classNames(agreed ? "translate-x-3.5" : "translate-x-0",
-                  "h-4 w-4 transform rounded-full bg-white shadow-sm ring-1 ring-gray-900/5 transition duration-200 ease-in-out")} />
+                <span aria-hidden="true" className={classNames(agreed ? "translate-x-5" : "translate-x-0",
+                  "pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out")} />
               </Switch>
               <Switch.Label className={`text-xl font-bold leading-6   ${libre.className} font-bold `}>
                 By selecting this, you agree to our{" "}

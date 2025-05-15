@@ -6,20 +6,21 @@ const libre = Libre_Caslon_Display({ subsets: ["latin"], weight: "400" });
 
 export default function HomeHeader() {
   return (
-    <div className=" lg:grid lg:grid-cols-2  pb-24 gap-24">
+    <div className="lg:grid lg:grid-cols-2 pb-24 gap-24">
       <div className="mt-24">
-          <ArchShape imageSrc="/dd_homepg.jpg" patternId="uniquePattern2" />
-
+        <ArchShape imageSrc="/dd_homepg.jpg" patternId="uniquePattern2" />
+        <div className="mt-4 flex justify-center">
+          <img src="/haas-door-logo.jpeg" alt="Haas Garage Door Logo" className="w-48 h-auto" />
+        </div>
       </div>
-
       <div className="flex flex-col gap-12">
-          <div className="">
-<Image
-src="/logo-dd.png"
-width={600}
-height={600}
-/>
-          </div>
+        <div className="">
+          <Image
+            src="/logo-dd.png"
+            width={600}
+            height={600}
+          />
+        </div>
 
         <div className="lg:ml-0 my-4 lg:grid lg:grid-cols-1 flex flex-col justify-center items-center">  <h1 className={`${libre.className} lg:text-left text-center font-bold text-6xl lg:text-8xl text-bold text-blue-900`}>Quality Doors, Professional Service</h1>
             <Link href="/contact">
