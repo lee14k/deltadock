@@ -18,7 +18,7 @@ export default function ThreeColIcon() {
   return (
     <div className="three-icon-home text-white flex flex-col justify-center items-center gap-12">
       <h1 className={`${libre.className} text-7xl text-center`}>We have you covered!</h1>
-      <p className={`mx-6 lg:mx-48 text-center text-2xl`}>We service, install, and repair overhead garage doors, openers, and loading docks for our residential and commercial customers within a 2-hour radius of Escanaba, MI</p>
+      <p className={`mx-6 lg:mx-48 text-center text-2xl`}>We service, install, and repair overhead garage doors, openers, and loading docks for our residential and commercial customers within a 1 hour radius of Escanaba, MI</p>
       <div className="grid lg:grid-cols-3 gap-24 lg:gap-36 mb-24">
         {groups.map((icon, index) => (
           <div key={index} className="text-center">
