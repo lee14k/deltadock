@@ -9,7 +9,8 @@ export default function HomeHeader() {
     <div className="lg:grid lg:grid-cols-2 pb-24 gap-24">
       <div className="mt-24">
         <ArchShape imageSrc="/dd_homepg.jpg" patternId="uniquePattern2" />
-        <div className="mt-4 flex justify-center">
+        <div className="mt-4 flex justify-center flex flex-col justify-center items-center">
+            <span className={`${libre.className} text-4xl font-bold`}>Partnering with:</span>
           <img src="/haas-door-logo.jpeg" alt="Haas Garage Door Logo" className="w-48 h-auto" />
         </div>
       </div>
