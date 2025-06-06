@@ -12,6 +12,11 @@ export default function HomeHeader() {
         <div className="mt-4 flex justify-center flex flex-col justify-center items-center">
             <span className={`${libre.className} text-4xl font-bold`}>Partnering with:</span>
           <img src="/haas-door-logo.jpeg" alt="Haas Garage Door Logo" className="w-48 h-auto" />
+          <a href="https://www.haascreate.com/" target="_blank">
+          <button className={`${libre.className} bg-doorange px-4 py-2 my-6 rounded-full text-4xl font-bold text-white`}>
+Build your dream garage door!
+          </button>
+          </a>
         </div>
       </div>
       <div className="flex flex-col gap-12">
