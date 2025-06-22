@@ -1,69 +1,39 @@
-// pages/api/google-reviews.js
-import puppeteer from 'puppeteer-extra';
-import StealthPlugin from 'puppeteer-extra-plugin-stealth';
-
-puppeteer.use(StealthPlugin());
-
-const placeUrl = "https://www.google.com/maps/place/?q=place_id:ChIJqX8Al7AsUQoRD8OTGVaCtKc";
-
-// Helper function to create a delay
-const delay = (time) => new Promise((resolve) => setTimeout(resolve, time));
-
-async function scrollPage(page, scrollContainer) {
-  let lastHeight = await page.evaluate(`document.querySelector("${scrollContainer}").scrollHeight`);
-  while (true) {
-    await page.evaluate(`document.querySelector("${scrollContainer}").scrollTo(0, document.querySelector("${scrollContainer}").scrollHeight)`);
-    await delay(2000);
-    let newHeight = await page.evaluate(`document.querySelector("${scrollContainer}").scrollHeight`);
-    if (newHeight === lastHeight) {
-      break;
-    }
-    lastHeight = newHeight;
-  }
-}
-
-async function getReviewsFromPage(page) {
-  const reviews = await page.evaluate(() => {
-    return Array.from(document.querySelectorAll(".jftiEf")).map((el) => {
-      return {
-        user: el.querySelector(".d4r55")?.textContent.trim() || "No name",
-        rating: parseFloat(el.querySelector(".kvMYJc")?.getAttribute("aria-label")) || 0,
-        snippet: el.querySelector(".MyEned")?.textContent.trim() || "No snippet",
-      };
-    });
-  });
-  return reviews;
-}
+import 'node-fetch';
 
 export default async function handler(req, res) {
-  try {
-    const browser = await puppeteer.launch({
-      headless: true,
-      args: ["--no-sandbox", "--disable-setuid-sandbox"],
-    });
-    const page = await browser.newPage();
-    await page.setDefaultNavigationTimeout(60000);
-    await page.goto(placeUrl);
-
-    // Wait for the place name element to load
-    await page.waitForSelector(".DUwDvf");
-
-    // Click to load more reviews (confirm this selector)
-    await page.click(".hh2c6");
-    await delay(2000);
-
-    // Wait for the reviews to be present on the page
-    await page.waitForSelector(".XiKgde");
-
-    // Scroll through the reviews container to load all reviews
-    await scrollPage(page, '.XiKgde');
-
-    // Extract reviews from the page
-    const reviews = await getReviewsFromPage(page);
-    await browser.close();
-    res.status(200).json({ reviews });
-  } catch (error) {
-    console.error('Error fetching reviews:', error);
-    res.status(500).json({ error: error.message });
+  if (req.method === 'GET') {
+    try {
+      const place_id = 'ChIJqX8Al7AsUQoRD8OTGVaCtKc';
+      console.log(place_id);
+      if (!place_id) {
+        return res.status(400).json({ error: 'place_id is required' });
+      }
+      
+      const apiKey = process.env.GOOGLE_PLACES_API_KEY;
+      
+      if (!apiKey) {
+        return res.status(500).json({ error: 'Google Places API key not configured' });
+      }
+      const response = await fetch(`https://places.googleapis.com/v1/places/${place_id}?fields=reviews`, {
+        headers: {
+          'Content-Type': 'application/json',
+          'X-Goog-Api-Key': apiKey,
+          'X-Goog-FieldMask': 'reviews'
+        }
+      });
+      
+      if (!response.ok) {
+        throw new Error(`Google Places API error: ${response.status}`);
+      }
+      
+      const data = await response.json();
+      res.status(200).json(data);
+      
+    } catch (error) {
+      console.error('Error fetching reviews:', error.message);
+      res.status(500).json({ error: error.message || 'Internal Server Error' });
+    }
+  } else {
+    res.status(405).json({ error: 'Method Not Allowed' });
   }
 }
